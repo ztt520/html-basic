@@ -1,0 +1,458 @@
+@charset "gb2312";
+/* css reset */
+body, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, code, form, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    font: normal 12px/24px Microsoft YaHei, Tahoma, simsun;
+}
+
+/*body{padding-top:42px;}*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ol, ul {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+em {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.clear {
+    zoom: 1
+}
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+    display: inline-block;
+}
+
+.o_h {
+    overflow: hidden;
+}
+
+.t_i {
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.tl {
+    text-align: left;
+}
+
+.seo {
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+html body .show {
+    display: block;
+}
+
+html body .hide {
+    display: none;
+}
+
+.p0 {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.p1 {
+    background-image: url(images/p1.png);
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.p2 {
+    background-image: url(images/p1-1.png);
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.center {
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.btn_down {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    cursor: pointer;
+    margin-left: -52px;
+    z-index: 101;
+    animation: down .5s linear infinite alternate;
+}
+
+@-webkit-keyframes down {
+    0% {
+        transform: translate(0, 10px)
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.bg_wrap {
+    min-width: 1000px;
+    height: 894px;
+    background: url(images/bg_wrap.jpg) no-repeat 50% 0;
+    position: relative;
+}
+
+.web_logo {
+    position: absolute;
+    left: 38px;
+    top: 38px;
+    z-index: 11;
+}
+
+.web_logo a {
+    display: block;
+    height: 100%;
+}
+
+.bg_center {
+    width: 1000px;
+    height: 894px;
+    background: url(images/bg_center.jpg) no-repeat 0 0;
+    margin: 0 0 0 -500px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.flash {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.left {
+    width: 1250px;
+    height: 894px;
+    position: absolute;
+    z-index: 1;
+    background: url(images/left.png) no-repeat 0 0;
+    left: 50%;
+    top: 0;
+    margin-left: -836px;
+    transition: all 1s ease-in;
+}
+
+.right {
+    width: 1052px;
+    height: 894px;
+    position: absolute;
+    z-index: 2;
+    background: url(images/right.png) no-repeat 0 0;
+    left: 50%;
+    top: 0;
+    margin-left: -94px;
+    transition: all 1s ease-in;
+}
+
+.qianjing {
+    height: 894px;
+    background: url(images/qianjing.png) no-repeat 50% bottom;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+}
+
+.center {
+    width: 1000px;
+    height: 894px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 12;
+}
+
+.slogen {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    margin-left: -122px;
+}
+
+.btn_wrap {
+    position: absolute;
+    left: 50%;
+    top: 590px;
+    margin-left: -313px;
+}
+
+.btn_act {
+    float: left;
+    margin-left: 50px;
+}
+
+.btn_enter {
+    float: left;
+    margin-left: 0px;
+}
+
+.btn_play {
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    top: 442px;
+}
+
+.pad {
+    position: relative;
+    text-indent: 0;
+}
+
+.pad a {
+    display: block;
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.download_IOS, .download_android, .download_PC {
+    width: 170px;
+    height: 40px;
+    top: 43px;
+    left: 187px;
+}
+
+.download_android {
+    top: 94px;
+}
+
+.download_PC {
+    top: 145px;
+}
+
+.link_zhubo {
+    width: 65px;
+    height: 146px;
+    top: 42px;
+    left: 377px;
+}
+
+.link_menpai {
+    width: 176px;
+    height: 83px;
+    top: 30px;
+    left: 450px;
+}
+
+.link_waizhuang {
+    width: 176px;
+    height: 85px;
+    top: 114px;
+    left: 450px;
+}
+
+.move_l {
+    -webkit-transform: translate3d(-1250px, 0, 0);
+    -webkit-filter: blur(10px);
+    opacity: 0;
+}
+
+.move_r {
+    -webkit-transform: translate3d(1052px, 0, 0);
+    -webkit-filter: blur(10px);
+    opacity: 0;
+}
+
+/** css gaga **/
+.slogen {
+    width: 283px;
+    height: 443px;
+    background-position: 0 0;
+}
+
+.pad {
+    width: 626px;
+    height: 202px;
+    background-position: -285px 0;
+}
+
+.web_logo {
+    width: 184px;
+    height: 94px;
+    background-position: -285px -204px;
+}
+
+.btn_play {
+    width: 191px;
+    height: 92px;
+    background-position: -285px -300px;
+}
+
+.btn_act {
+    width: 272px;
+    height: 79px;
+    background-position: -471px -204px;
+}
+
+.btn_enter {
+    width: 272px;
+    height: 79px;
+    background-position: -478px -285px;
+}
+
+
+/** foot **/
+.foot_logo_q {
+    width: 166px;
+    height: 31px;
+    background-position: -622px -119px;
+}
+
+.copy {
+    width: 85px;
+    height: 35px;
+    background-position: -622px -82px;
+}
+
+.footer_bg {
+    clear: both;
+    font-size: 12px;
+    background: #425165
+}
+
+.gw_footer, .gw_footer a {
+    color: #7188a6
+}
+
+.gw_logo1 {
+    background-position: -228px -49px;
+    height: 35px
+}
+
+.gw_logo0 {
+    background-position: -115px -49px;
+    height: 38px
+}
+
+.gw_footer {
+    width: 1000px;
+    padding: 30px 0;
+    clear: both;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    line-height: 20px
+}
+
+.gw_footer * {
+    margin: 0;
+    padding: 0
+}
+
+.foot_l_p {
+    width: 302px;
+    height: 40px
+}
+
+.foot_r_p {
+    width: 672px
+}
+
+.foot_logo {
+    width: 166px;
+    height: 31px;
+    overflow: hidden
+}
+
+.gw_footer .tn {
+    text-indent: -9999em;
+    overflow: hidden;
+    display: block
+}
+
+.foot_logo {
+    margin-right: 10px
+}
+
+.other_logo {
+    overflow: hidden
+}
+
+.other_logo a, .other_logo span {
+    display: block;
+    margin-right: 10px
+}
+
+.foot_r_p span {
+    display: inline-block;
+    margin: 0 6px;
+    margin-bottom: 0 \9;
+    width: 1px;
+    height: 6px;
+    overflow: hidden
+}
+
+.gw_footer .e {
+    text-align: left;
+    height: 19px;
+    overflow: hidden;
+    font-family: Tahoma
+}
+
+.gw_footer .fl {
+    float: left;
+    font-size: 11px;
+    font-size: 10px \9;
+    line-height: 19px
+}
+
+.gw_footer .fr {
+    float: right
+}
+
+.gw_footer .license {
+    padding-left: 10px;
+    clear: both;
+    text-align: left;
+    height: 25px;
+    line-height: 25px
+}

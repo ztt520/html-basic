@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="gb2312"/>
+    <title>剑侠情缘-《头脑特工队》</title>
+
+    <link rel="stylesheet" href="yindao.css">
+</head>
+<body>
+<div class="bg_wrap o_h">
+    <h1 class="p1 web_logo"><a href="#"></a></h1>
+
+    <div class="bg_center"></div>
+    <div id="left" class="left"></div>
+    <div id="right" class="right"></div>
+    <div class="flash">
+        <div id="flashWrap"></div>
+    </div>
+    <div class="qianjing"></div>
+    <div class="center o_h">
+        <div class="slogen p1"></div>
+        <div class="btn_wrap o_h">
+            <a href="#" class="btn_act p1">进入专题页</a>
+            <a href="javascript:openLink('../index.html')" class="btn_enter p1">进入官网</a>
+
+            <div class="pad p1 clear">
+                <a href="#" class="download_IOS">IOS下载</a>
+                <a href="#" class="download_android">安卓下载</a>
+                <a href="#" class="download_PC">电脑版下载</a>
+                <a href="#" class="link_zhubo">主播玩剑侠GO</a>
+                <a href="#" class="link_menpai">新门派</a>
+                <a href="#" class="link_waizhuang">新外装</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer_bg">
+    <div class="gw_footer" id="gw_ft">
+        <div class="fl foot_l_p">
+            <p class="fl foot_logo">
+                <a title="腾讯互动娱乐" target="_blank" href="#" class="foot_logo_q tn p2">腾讯互动娱乐</a>
+            </p>
+
+            <div id="other_logo" class="fl other_logo">
+                <a href="javascript:" class="copy p2" title="西山居">西山居</a>
+            </div>
+        </div>
+        <div class="fr foot_r_p">
+            <p class="tl">本网络游戏适合年满18周岁(含)以上的用户使用；为了您的健康，请合理控制游戏时间。</p>
+
+            <p class="tl">抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+
+            <p>
+                <a href="#">腾讯互动娱乐</a><span>|</span>
+                <a href="#">服务条款</a><span>|</span>
+                <a href="#">广告服务</a><span>|</span>
+                <a href="#">腾讯招聘</a><span>|</span>
+                <a href="#">腾讯游戏客服</a><span>|</span>
+                <a href="#">游戏地图</a><span>|</span>
+                <a href="#">游戏活动</a><span>|</span>
+                <a href="#">商务合作</a><span>|</span>
+                <a href="#">腾讯网</a><span>|</span>
+                <a href="#">网站导航</a>
+            </p>
+
+            <div class="e">
+                <p class="fl">COPYRIGHT &copy;2016 TENCENT. ALL RIGHTS RESERVED.</p>
+
+                <p class="fr"><a href="#">腾讯公司版权所有</a></p>
+            </div>
+            <p style="text-align:left;"><a href="#">粤网文[2014]0633-233号</a></p>
+
+            <p style="text-align:left;"><a href="#">新出网证（粤）字010号</a></p>
+        </div>
+    </div>
+</div>
+<div class="dia" id="dia" style="display: none">
+    <div class="dia-con" id="videoCon"></div>
+    <a class="dia-close" href="#" title="关闭">&times;</a>
+</div>
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+
+    function openLink(s) {
+        $("#left").addClass("move_l");
+        $("#right").addClass("move_r");
+        window.setTimeout(function () {
+            location.href = s
+        }, 800);
+    }
+</script>
+</body>
+</html>

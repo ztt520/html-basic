@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin:0;
+			padding:0;
+		}
+		body {
+			background-color: #ccc;
+		}
+		div {
+			width: 600px;
+			height: 100px;
+			margin:200px auto;
+			text-align:center;
+		}
+		div span {
+			font-size:100px;
+			display:inline-block;
+			width: 100px;
+			line-height: 100px;
+			margin-right:10px;
+			position: relative;
+		}
+		span:before,span:after {
+			content:attr(data-text);
+			position: absolute;
+			left:0;
+			top:0;
+			color: rgba(0,0,0,0.3);
+			transform-origin: left center;
+			transition: transform 0.3s;
+			transform: scale(0.95,1);
+		}
+		span:after {
+			color:#fff;
+		}
+		div:hover span:after {
+			transform: rotateY(45deg) scale(0.95,1) skew(0,10deg);
+		}
+		div:hover span:before {
+			transform: scale(0.95,1) skew(0,15deg)
+		} 
+	</style>
+</head>
+<body>
+	<div> 
+		<span data-text="地">地</span>
+		<span data-text="表">表</span>
+		<span data-text="最">最</span>
+		<span data-text="强">强</span>
+	</div>
+</body>
+</html>

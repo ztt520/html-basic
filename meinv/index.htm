@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Keywords" content="剑侠情缘  剑侠情缘手游  忘忧酒馆  醉春风   爱情  武侠 武林第一美女诞生，武林前二十名美女榜出炉">
+    <meta name="Description" content="《剑侠情缘手游》官方网站，《剑侠情缘手游》是剑侠情缘系列首款手游，由原班人马打造，游戏还原了端游中经典的门派以及宋金战场、白虎堂等经典玩法。同时手游版还将开放家族系统、结婚等社交系统，给予玩家一个更丰富，“有人味”的江湖。在还原经典的基础上，手游版将会打造一个更为开放的大世界，让告别房间式RPG体验，让玩家随时随地闯荡江湖。">
+    <title>剑侠情缘-武林第一美女</title>
+    <!-- 页面设计：cp | 页面制作：cp | 创建：2017-07-06 -->
+    <style>
+        body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0}
+        body,button,input,select,textarea{font:normal 12px/24px Microsoft YaHei,Tahoma,simsun}
+        h1,h2,h3,h4,h5,h6{font-size:100%}
+        em,b{font-style:normal}
+        a{text-decoration:none}
+        a:hover{text-decoration:underline}
+        img{border:0}
+        button,input,select,textarea{font-size:100%;outline:none}
+        table{border-collapse:collapse;border-spacing:0}
+        td,th,ul,ol{padding:0}
+        li{list-style: none}
+
+        .text-hide{
+            overflow: hidden;
+            line-height: 500;
+        }
+        .page{
+            position: relative;
+            overflow: hidden;
+        }
+        .bg{
+            position: absolute;
+            left: 50%;
+            top:0;
+            margin-left: -1000px;
+            height: 100%;
+            width: 2000px;
+        }
+        .bg img{
+            display: block;
+        }
+        .main{
+            position: relative;
+            width: 1150px;
+            margin: 0 auto;
+            z-index: 9;
+        }
+        .page-1{
+           height: 920px;
+        }
+        .btn-logo{
+            position: absolute;
+            left: -400px;
+            top: 20px;
+            height: 124px;
+            width: 240px;
+            background: #fff;
+            opacity:0;
+            filter:alpha(opacity=0);
+        }
+        .page-title{
+            height: 10px;
+        }
+        .btn-scroll{
+            position: absolute;
+            top: 780px;
+            left:575px ;
+            width: 41px;
+            height: 26px;
+            background: #fff;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .hide{display: none;}
+        .ico-rank,.t-img,.t-nums,.pop .btn-close{
+            background: url("spr.png") no-repeat;
+        }
+        .share-wp,.btn-web i{background: url("spr-share.png") no-repeat;}
+        .share-wp{
+            position: absolute;
+            top:35px;
+            right: 30px;
+            width: 317px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .share-wp span{
+            float: left;
+        }
+        .share-wp a{
+            float: left;
+            color: #1e335d;
+        }
+        .btn-web{
+            position: relative;
+            margin: 0 15px;
+            padding-left: 18px;
+        }
+        .btn-web i{
+            position: absolute;
+            left: 0;
+            top:9px;
+            width:13px;
+            height: 12px;
+            background-position: -160px -43px;
+        }
+        .tg-sns{
+            margin-top: 7px;
+        }
+
+
+
+        .page-2{
+            height: 1645px;
+        }
+        .rank-list{
+            overflow: hidden;
+            float: left;
+            margin-left: -35px;
+        }
+        .rank-list li{
+            float: left;
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 70px;
+            margin-left: 35px;
+            width: 162px;
+        }
+
+        .t-img{
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            height: 162px;
+            width: 162px;
+            background-position: -320px -256px;
+        }
+        .t-img img{
+            display: block;
+            margin: 0 auto;
+            width: 146px;
+            height:146px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+        .ico-rank{
+            position: absolute;
+            top: 8px;
+            left: 0;
+            color: #fff;
+            text-indent: -5px;
+            font-size:18px;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            background-position: -506px -124px;
+        }
+        .t-img .ico-rank.ico-rank01{
+            top:0;
+            width: 64px;
+            height: 55px;
+            line-height: 70px;
+            background-position:-550px -49px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .rank-list li p{
+            margin-top: 10px;
+        }
+        .t-name{
+            font-size: 24px;
+            color: #343436;
+            font-family: \5B8B\4F53;
+        }
+        .t-area{
+            font-size: 20px;
+            color: #5b6295;
+        }
+        .t-nums{
+            margin: 0 auto;
+            width: 147px;
+            height: 34px;
+            line-height: 34px;
+            font-size: 18px;
+            text-indent: 10px;
+            background-position: -443px 0;
+            color: #5a93a6;
+        }
+        .rank-list li.first {
+            width: 296px;
+            margin: 0 60px 50px;
+        }
+        .first .t-nums{
+            background-position: -131px 0;
+            color: #fff;
+        }
+        .first .t-img{
+            background-position: 0 -65px;
+            width: 296px;
+            height: 296px;
+        }
+        .first .t-img img{
+            width: 273px;
+            height: 273px;
+            margin-top: 11px;
+        }
+        .rank-list li.second{
+            width: 184px;
+            margin-left: 210px;
+            margin-top: 113px;
+        }
+        .second .t-img{
+            background-position: -309px -67px;
+            width: 184px;
+            height: 184px;
+        }
+        .second .t-img img{
+            width: 172px;
+            height: 172px;
+            margin-top: 6px;
+        }
+        .second .t-nums{
+            background-position: -288px 0;
+            color: #fff;
+        }
+        .rank-list li.third{
+            margin-right: 180px;
+            margin-left: 0;
+        }
+        .rank-list li.ml138{
+            margin-left: 138px;
+        }
+
+        .cover{
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity:.6;
+            filter: alpha(opacity=60);
+            left: 0;
+            top:0;
+            display: none;
+        }
+        .pop{
+            position: fixed;
+            z-index: 1000;
+            left: 50%;
+            top:50%;
+            display: none;
+        }
+        .pop .btn-close{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-position: -497px -69px;
+            top: 0px;
+            right: -45px;
+        }
+        .pop-info{
+            width: 440px;
+            height: 680px;
+            margin:-340px 0 0 -220px ;
+            background: url("bg-pop.jpg") no-repeat;
+        }
+        .pop-info .rank-list{
+            margin-top: 30px;
+            margin-left: 0;
+            width: 100%;
+        }
+        .pop-info .t-area{
+            display: none;
+        }
+        .pop-info .rank-list li{
+            margin: 0;
+        }
+        .pop-info .ico-rank{
+            left: 20px;
+        }
+        .info-list{
+            display: block;
+            overflow: hidden;
+            margin-top: 36px;
+        }
+        .info-list p{
+            margin-top: 0 !important;
+            text-align: left;
+            padding-left: 100px;
+            line-height: 40px;
+            *line-height:42px;
+            color: #36424f;
+            font-size: 16px;
+        }
+        .pop-info .rank-list li.first{
+            width: 100%;
+        }
+
+        /*底部*/
+        .footer{
+            padding: 20px 0;
+            background: #000;
+        }
+        .foot{
+            width: 605px;
+            margin: 0 auto;
+            padding-left:310px;
+            position: relative;
+            line-height: 17px;
+        }
+        .foot,.foot a{color: #fff;}
+        .logo-wp{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 310px;
+        }
+        .logo-wp a{
+            float: left;
+            height:35px;
+        }
+        .btn-logo1{
+            width: 166px;
+            background: url("logo-1.png") no-repeat center;
+        }
+        .btn-logo2{
+            width:85px;
+            margin-left: 20px;
+            background: url("logo-2.png") no-repeat center;
+        }
+    </style>
+</head>
+<body>
+<div class="page page-1">
+    <div class="bg">
+        <img src="bg-1-1.jpg" alt="背景">
+        <img src="bg-1-2.jpg" alt="背景">
+    </div>
+    <div class="main">
+        <a href="../index.html" title="剑侠奇缘" class="btn-logo" onclick="PTTSendClick('btn','logo','剑侠情缘');"></a>
+        <h2 class="page-title text-hide">武林第一美女诞生  武林前二十名美女榜出炉</h2>
+        <a href="#page-2" class="btn-scroll"></a>
+    </div>
+</div>
+<div class="page page-2" id="page-2">
+    <div class="bg">
+        <img src="bg-2.jpg" alt="背景">
+    </div>
+    <div class="main">
+        <ul class="rank-list">
+            <li class="second">
+                <div class="t-img">
+                    <i class="ico-rank">2</i>
+                    <img src="pic-02.png" alt="小桃酥">
+                </div>
+                <p class="t-name">小桃酥</p>
+                <p class="t-area">iOS微信001服</p>
+                <p class="t-nums">549740</p>
+            </li>
+            <li class="first">
+                <div class="t-img">
+                    <i class="ico-rank ico-rank01">1</i>
+                    <img src="pic-01.png" alt="月之灬雅典娜">
+                </div>
+                <p class="t-name">月之灬雅典娜</p>
+                <p class="t-area">iOS手Q212服</p>
+                <p class="t-nums">981621</p>
+            </li>
+            <li class="second third">
+                <div class="t-img">
+                    <i class="ico-rank">3</i>
+                    <img src="pic-03.png" alt="江·木易">
+                </div>
+                <p class="t-name">江·木易</p>
+                <p class="t-area">iOS微信326服</p>
+                <p class="t-nums">437938</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">4</i>
+                    <img src="pic-04.png" alt="曼珠沙华">
+                </div>
+                <p class="t-name">曼珠沙华</p>
+                <p class="t-area">iOS微信084服</p>
+                <p class="t-nums">431290</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">5</i>
+                    <img src="pic-05.png" alt="低调·乖乖">
+                </div>
+                <p class="t-name">低调·乖乖</p>
+                <p class="t-area">iOS微信324服</p>
+                <p class="t-nums">317752</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">6</i>
+                    <img src="pic-06.png" alt="晴雪">
+                </div>
+                <p class="t-name">晴雪</p>
+                <p class="t-area">iOS微信286服</p>
+                <p class="t-nums">299657</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">7</i>
+                    <img src="pic-07.png" alt="思颖">
+                </div>
+                <p class="t-name">思颖</p>
+                <p class="t-area">iOS微信340服</p>
+                <p class="t-nums">260989</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">8</i>
+                    <img src="pic-08.png" alt="草莓酱可爱">
+                </div>
+                <p class="t-name">草莓酱可爱</p>
+                <p class="t-area">iOS微信301服</p>
+                <p class="t-nums">243788</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">9</i>
+                    <img src="pic-09.png" alt="妖妖小姐">
+                </div>
+                <p class="t-name">妖妖小姐</p>
+                <p class="t-area">iOS微信001服</p>
+                <p class="t-nums">143871</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">10</i>
+                    <img src="pic-10.png" alt="狂爷">
+                </div>
+                <p class="t-name">狂爷</p>
+                <p class="t-area">iOS微信002服</p>
+                <p class="t-nums">142816</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">11</i>
+                    <img src="pic-11.png" alt="晕晕晕">
+                </div>
+                <p class="t-name">晕晕晕</p>
+                <p class="t-area">iOS微信112服</p>
+                <p class="t-nums">140935</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">12</i>
+                    <img src="pic-12.png" alt="杨依诺">
+                </div>
+                <p class="t-name">杨依诺</p>
+                <p class="t-area">iOS微信341服</p>
+                <p class="t-nums">135258</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">13</i>
+                    <img src="pic-13.png" alt="丿玫玫灬">
+                </div>
+                <p class="t-name">丿玫玫灬</p>
+                <p class="t-area">iOS微信161服</p>
+                <p class="t-nums">124104</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">14</i>
+                    <img src="pic-14.png" alt="金太美">
+                </div>
+                <p class="t-name">金太美</p>
+                <p class="t-area">iOS微信036服</p>
+                <p class="t-nums">81670</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">15</i>
+                    <img src="pic-15.png" alt="玉凝">
+                </div>
+                <p class="t-name">玉凝</p>
+                <p class="t-area">iOS微信004服</p>
+                <p class="t-nums">68353</p>
+            </li>
+            <li class="ml138">
+                <div class="t-img">
+                    <i class="ico-rank">16</i>
+                    <img src="pic-16.png" alt="灬如此如花">
+                </div>
+                <p class="t-name">灬如此如花</p>
+                <p class="t-area">iOS微信271服</p>
+                <p class="t-nums">69017</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">17</i>
+                    <img src="pic-17.png" alt="湘泽·琉香">
+                </div>
+                <p class="t-name">湘泽·琉香</p>
+                <p class="t-area">iOS手Q191服</p>
+                <p class="t-nums">64876</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">18</i>
+                    <img src="pic-18.png" alt="糖小豆·">
+                </div>
+                <p class="t-name">糖小豆·</p>
+                <p class="t-area">iOS微信304服</p>
+                <p class="t-nums">64745</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">19</i>
+                    <img src="pic-19.png" alt="梨落暖暖·">
+                </div>
+                <p class="t-name">梨落暖暖·</p>
+                <p class="t-area">iOS微信132服</p>
+                <p class="t-nums">62810</p>
+            </li>
+            <li>
+                <div class="t-img">
+                    <i class="ico-rank">20</i>
+                    <img src="pic-20.png" alt="风起时">
+                </div>
+                <p class="t-name">风起时</p>
+                <p class="t-area">iOS微信334服</p>
+                <p class="t-nums">57912</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="foot">
+        <div class="logo-wp">
+            <a href="javascript:if(confirm(%27http://ieg.tencent.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://ieg.tencent.com/%27" tppabs="http://ieg.tencent.com/" title="腾讯互动娱乐" class="btn-logo1" onclick="PTTSendClick('btn','logo','腾讯互动娱乐');"></a>
+            <a href="javascript:;" title="西山居" class="btn-logo2" onclick="PTTSendClick('btn','logo','西山居');"></a>
+        </div>
+        <div class="foot-nav">
+            <a href="javascript:if(confirm(%27http://ieg.tencent.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://ieg.tencent.com/%27" tppabs="http://ieg.tencent.com/" target="_blank" title="腾讯互动娱乐" onclick="PTTSendClick('btn','nav','腾讯互动娱乐');">腾讯互动娱乐</a>
+            <span>|</span>
+            <a href="javascript:if(confirm(%27http://game.qq.com/contract.shtml  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://game.qq.com/contract.shtml%27" tppabs="http://game.qq.com/contract.shtml" target="_blank" title="服务条款" onclick="PTTSendClick('btn','nav','服务条款');">服务条款</a>
+            <span>|</span>
+            <a href="javascript:if(confirm(%27http://adver.qq.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://adver.qq.com/%27" tppabs="http://adver.qq.com/" target="_blank" title="广告服务" onclick="PTTSendClick('btn','nav','广告服务');">广告服务</a>
+            <span>|</span>
+            <a href="javascript:if(confirm(%27http://game.qq.com/hr/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://game.qq.com/hr/%27" tppabs="http://game.qq.com/hr/" target="_blank" title="腾讯游戏招聘" onclick="PTTSendClick('btn','nav','腾讯游戏招聘');">腾讯游戏招聘</a>
+            <span>|</span>
+            <a href="javascript:if(confirm(%27http://service.qq.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://service.qq.com/%27" tppabs="http://service.qq.com/" target="_blank" title="腾讯游戏客服" onclick="PTTSendClick('btn','nav','腾讯游戏客服');">腾讯游戏客服</a>
+            <span>|</span>
+            <a href="javascript:if(confirm(%27http://game.qq.com/gnav/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://game.qq.com/gnav/%27" tppabs="http://game.qq.com/gnav/" target="_blank" title="游戏地图" onclick="PTTSendClick('btn','nav','游戏地图');">游戏地图</a>
+            <span>|</span>
+            <a href="javascript:if(confirm(%27http://tgact.qq.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://tgact.qq.com/%27" tppabs="http://tgact.qq.com/" target="_blank" title="游戏活动" onclick="PTTSendClick('btn','nav','游戏活动');">游戏活动</a>
+            <span>|</span>
+            <a href="javascript:if(confirm(%27http://game.qq.com/portal2010/business.htm  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://game.qq.com/portal2010/business.htm%27" tppabs="http://game.qq.com/portal2010/business.htm" target="_blank" title="商务合作" onclick="PTTSendClick('btn','nav','商务合作');">商务合作</a>
+            <span>|</span>
+            <a href="javascript:if(confirm(%27http://www.qq.com/map/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.qq.com/map/%27" tppabs="http://www.qq.com/map/" target="_blank" title="网站导航" onclick="PTTSendClick('btn','nav','网站导航');">网站导航</a>
+            <span>|</span>
+        </div>
+        <p class="copyright">COPYRIGHT ? 1998 – 2017 TENCENT. ALL RIGHTS RESERVED. 腾讯公司 版权所有</p>
+    </div>
+</div>
+
+</body>
+</html>

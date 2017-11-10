@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>攻略百科</title>
+    <script src="jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="gonglue.css">
+    <script src="jquery-1.12.5.js">
+    </script>
+    <script src="gonglue.js"></script>
+</head>
+<body>
+<!--<div  class="glbegin">-->
+    <!--<span data-text="头">头</span>-->
+    <!--<span data-text="脑">脑</span>-->
+    <!--<span data-text="特">特</span>-->
+    <!--<span data-text="工">工</span>-->
+    <!--<span data-text="队">队</span>-->
+<!--</div>-->
+<div class="glhead" id="head1">
+    <a  class="goback" href="../index.html"></a>
+    <div class="gh1"></div>
+    <div class="gh2"></div>
+    <div class="glbegin">
+        <span data-text="头">头</span>
+        <span data-text="脑">脑</span>
+        <span data-text="特">特</span>
+        <span data-text="工">工</span>
+        <span data-text="队">队</span>
+    </div>
+    <div class="glimage">
+        <img src="images/logo-2.gif" alt="">
+    </div>
+</div>
+<div class="glnav" id="boxli">
+    <ul>
+        <li  class="nav01"></li>
+        <li  class="nav02"></li>
+        <li  class="nav03"></li>
+        <li  class="nav04"></li>
+        <li  class="nav05"></li>
+        <li  class="nav06"></li>
+        <li  class="nav07"></li>
+    </ul>
+</div>
+<div class="glgame" id="bra1"  >
+    <div  class="gametop">
+        <div class="gametopin clearfix">
+            <p></p>
+            <ul id="lisUl">
+                <li><a href="#" >资料片</a></li>
+                <li></li>
+                <li><a href="#">新手上路</a></li>
+                <li></li>
+                <li><a href="#">游侠江湖</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--手风琴begin-->
+    <div  class="gamedown"  id="downid">
+        <ul  class="gul1">
+            <li>
+                <i class="icon1"></i>
+                <img src="images/aj01.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img class="s3" src="images/aj02.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img src="images/aj03.jpg" alt="">
+            </li>
+        </ul>
+        <ul  class="gul2"  id="gul2d">
+            <li>
+                <i class="icon1"></i>
+                <img src="images/aj10.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img class="s3" src="images/aj11.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img src="images/aj12.jpg" alt="">
+            </li>
+            <li>
+                <i class="icon1"></i>
+                <img src="images/aj13.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img class="s3" src="images/aj14.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img src="images/aj15.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img class="s3" src="images/aj16.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img src="images/aj17.jpg" alt="">
+            </li>
+        </ul>
+        <ul class="gul3" id="lastul">
+            <li>
+                <i class="icon1"></i>
+                <img src="images/aj20.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img class="s3" src="images/aj21.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img src="images/aj22.jpg" alt="">
+            </li>
+            <li>
+                <i></i>
+                <img src="images/aj20.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="bra2"  class="gldoor">
+    <div  class="doortop">
+        <div class="doortopin">
+            <p></p>
+            <ul>
+                <li><a class="door1" href="#">土</a></li>
+                <li></li>
+                <li><a class="door2" href="#">火</a></li>
+                <li></li>
+                <li><a class="door3" href="#">水</a></li>
+                <li></li>
+                <li><a class="door4" href="#">木</a></li>
+                <li></li>
+                <li><a class="door5" href="#">金</a></li>
+            </ul>
+        </div>
+    </div>
+    <div  class="doordown">
+        <div class="downin1">
+            <img src="images/bj_j01.png" alt="">
+            <img src="images/bj_j02.png" alt="">
+        </div>
+        <div class="downin2">
+            <img src="images/bj_m01.png" alt="">
+            <img src="images/bj_m02.png" alt="">
+            <img src="images/bj_m03.png" alt="">
+        </div>
+        <div class="downin3">
+            <img src="images/bj_s01.png" alt="">
+            <img src="images/bj_s02.png" alt="">
+        </div>
+        <div class="downin4">
+            <img src="images/bj_h01.png" alt="">
+            <img src="images/bj_h02.png" alt="">
+            <img src="images/bj_h03.png" alt="">
+        </div>
+        <div class="downin5">
+            <img src="images/bj_t01.png" alt="">
+            <img src="images/bj_t02.png" alt="">
+        </div>
+    </div>
+</div>
+<div id="bra3" class="glsystem">
+    <div class="system">
+        <div class="systemin">
+            <div class="systeminleft">
+                <img src="images/cj01.png" alt="">
+            </div>
+            <div class="systeminright">
+                <dl>
+                    <dt>其它系统</dt>
+                    <dd>五行系统</dd>
+                    <dd>坐骑系统</dd>
+                    <dd>成就系统</dd>
+                    <dd>头衔系统</dd>
+                    <dd>时装系统</dd>
+                </dl>
+                <dl>
+                    <dt>商业系统</dt>
+                    <dd>商城</dd>
+                    <dd>摆摊</dd>
+                    <dd>拍卖行</dd>
+                    <dd>银两</dd>
+                    <dd>元宝</dd>
+                </dl>
+                <dl>
+                    <dt>装备系统</dt>
+                    <dd>装备介绍</dd>
+                    <dd>装备等级</dd>
+                    <dd>染色展示</dd>
+                    <dd>装备获取</dd>
+                    <dd>装备强化</dd>
+                    <dd>装备洗练</dd>
+                </dl>
+                <dl>
+                    <dt>魂石系统</dt>
+                    <dd>魂石介绍</dd>
+                    <dd>魂石获取</dd>
+                    <dd>魂石属性</dd>
+                    <dd>魂石搭配</dd>
+                    <dd>魂石等级</dd>
+                </dl>
+                <dl>
+                    <dt>同伴系统</dt>
+                    <dd>同伴系统</dd>
+                    <dd>同伴介绍</dd>
+                    <dd>同伴招募</dd>
+                    <dd>同伴遣散</dd>
+                    <dd>同伴图鉴</dd>
+                </dl>
+                <dl>
+                    <dt>社交系统</dt>
+                    <dd>好友</dd>
+                    <dd>敌人</dd>
+                    <dd>师徒</dd>
+                    <dd>微信/QQ好友</dd>
+                    <dd>家园</dd>
+                </dl>
+                <dl>
+                    <dt>家族系统</dt>
+                    <dd>创建家族</dd>
+                    <dd>家族信息</dd>
+                    <dd>家族成员</dd>
+                    <dd>家族建筑</dd>
+                    <dd>家族领地</dd>
+                    <dd>家族宝贝</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bra4" class="glplay">
+    <div  class="playup">
+        <div class="playupin">
+            <p></p>
+            <ul >
+                <li><a class="aone" href="#">周历活动</a></li>
+                <li><a class="atwo" href="#">限时活动</a></li>
+                <li><a class="athree" href="#">日常活动</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="playdown">
+        <div class="playdownin">
+            <ul class="ulone">
+                <li><a href="#"><img src="images/dj01.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj02.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj04.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj05.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj06.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj07.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj08.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj09.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj10.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj11.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj12.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj13.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj14.jpg" alt=""></a></li>
+            </ul>
+            <ul class="ultwo">
+                <li><a href="#"><img src="images/dj20.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj21.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj22.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj23.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj24.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj25.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj26.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj27.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj28.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj29.jpg" alt=""></a></li>
+            </ul>
+            <ul class="ulthree">
+                <li><a href="#"><img src="images/dj30.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj31.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj32.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj33.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/dj34.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="bra5" class="glmessage">
+    <div class="message">
+        <div class="messageleft">
+            <img src="images/ej01.png" alt="">
+            <div class="leftin">
+                <p>常用信息</p>
+                <ul  class="inone">
+                    <li><a href="#">NPC合集</a></li>
+                    <li><a href="#">练级地点</a></li>
+                    <li><a href="#">地图介绍</a></li>
+                </ul>
+                <p>辅助工具</p>
+                <ul  class="intwo">
+                    <li><a href="#">月卡说明</a></li>
+                    <li><a href="#">手机绑定</a></li>
+                    <li><a href="#">千里传音</a></li>
+                    <li><a href="#">玩家更名</a></li>
+                    <li><a href="#">更换门派</a></li>
+                    <li><a href="#">周卡说明</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="messageright">
+            <p></p>
+            <div class="msrightin">
+                <h3>装备</h3>
+                <ul class="ulup">
+                    <li><a href="#"><span class="sp1">武器</span></a></li>
+                    <li><a href="#"><span class="sp2">帽子</span></a></li>
+                    <li><a href="#"><span class="sp3">项链</span></a></li>
+                    <li><a href="#"><span class="sp4">护腕</span></a></li>
+                    <li><a href="#"><span class="sp5">戒指</span></a></li>
+                    <li><a href="#"><span class="sp6">衣服</span></a></li>
+                    <li><a href="#"><span class="sp7">玉佩</span></a></li>
+                    <li><a href="#"><span class="sp8">腰带</span></a></li>
+                    <li><a href="#"><span class="sp9"><i>附身符</i></span></a></li>
+                    <li><a href="#"><span class="sp10">鞋子</span></a></li>
+                    <li><a href="#"><span class="sp11"><i>黄金装备</i></span></a></li>
+                    <li><a href="#"><span class="sp12"><i>染色展示</i></span></a></li>
+                </ul>
+                <h3>道具</h3>
+                <ul class="uldown">
+                    <li><a href="#"><span class="spa">水晶</span></a></li>
+                    <li><a href="#"><span class="spb"><i>神秘矿石</i></span></a></li>
+                    <li><a href="#"><span class="spc"><i>头衔令牌</i></span></a></li>
+                    <li><a href="#"><span class="spd">古董</span></a></li>
+                    <li><a href="#"><span class="spe"><i>黄金图谱</i></span></a></li>
+                    <li><a href="#"><span class="spf"><i>同伴经验药水</i></span></a></li>
+                    <li><a href="#"><span class="spg">秘籍</span></a></li>
+                    <li><a href="#"><span class="sph"><i>同伴技能书</i></span></a></li>
+                    <li><a href="#"><span class="spi"><i>天剑令</i></span></a></li>
+                    <li><a href="#"><span class="spj"><i>玫瑰花/幸运草</i></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <b></b>
+    </div>
+</div>
+<div id="bra6" class="glfooter">
+    <div class="footercontainer">
+        <div class="containerleft"><span>Inside Out Team</span>
+        </div>
+        <!-- 底部 中-->
+        <div class="containerright">
+            <p class="rightfirst">
+                <a href="#">关于我们</a><span>|</span>
+                <a href="#">服务协议</a><span>|</span>
+                <a href="#">联系我们</a><span>|</span>
+                <a href="#">客服中心</a><span>|</span>
+                <a href="#">诚聘英才</a>
+            </p>
+
+            <p>Copyright © 2017-09 Inside Out 北京市传智播客顺义校区前端黑马34期头脑特工队 版权所有</p>
+
+            <p> 抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间</p>
+        </div>
+
+    </div>
+</div>
+<script>
+    var boxli=document.getElementById("boxli");
+    var listul=boxli.children[0];
+    var listli=listul.children;//所有的li
+//    var listlia=listli;
+    var arr1=["0 -115px","-142px -115px","-284px -115px",
+        "-426px -115px","-570px -115px","-710px -115px","-852px -115px"]
+    //var arr1 = ["0 -100px", "-190px -100px", "-380px -100px", "-570px -100px", "-760px -100px"];//hong
+//    var pos = 0;
+    var arr = ["0 0", "-142px 0", "-284px 0", "-426px 0", "-570px 0","-710px 0","-852px 0"]//bai
+    listli[0].style.background="url(images/nav.jpg) no-repeat " + arr1[0];
+    for (var i = 0; i < listli.length; i++) {
+        listli[i].index = i;
+        listli[i].onmouseover = function () {
+            for (var i = 0; i < listli.length; i++) {
+                listli[i].style.background = "url(images/nav.jpg) no-repeat " + arr[i];
+                this.style.cursor = "pointer"
+            }
+            this.style.background = "url(images/nav.jpg) no-repeat " + arr1[this.index];
+        }
+        listli[i].onmouseout = function () {
+            for (var i = 0; i < listli.length; i++) {
+                this.style.background = "url(images/nav.jpg) no-repeat " + arr[this.index];
+            }
+            listli[0].style.background="url(images/nav.jpg) no-repeat " + arr1[0];
+        }
+    }
+
+</script>
+<script>
+    var downid = document.getElementById("downid");
+    var listid = downid.children[0];
+    var link = listid.children;
+    for (var i = 0; i < link.length; i++) {
+        link[i].style.left = i * 70 + "px";
+        link[i].index = i;
+        link[i].onmouseover = function () {
+            for (var i = 0; i < link.length; i++) {
+                if (i <= this.index) {
+                    animate(link[i], "left", i * 70);
+                } else {
+                    animate(link[i], "left", i * 70 + 786);
+                }
+            }
+        }
+    }
+    var downid1 = document.getElementById("gul2d");
+    var listid1 = downid1.children;
+    for (var i = 0; i < listid1.length; i++) {
+        listid1[i].style.left = i * 70 + "px";
+        listid1[i].index = i;
+        listid1[i].onmouseover = function () {
+            for (var i = 0; i < listid1.length; i++) {
+                if (i <= this.index) {
+                    animate(listid1[i], "left", i * 70);
+                } else {
+                    animate(listid1[i], "left", i * 70 +438);
+                }
+            }
+        }
+    }
+    var downid = document.getElementById("lastul");
+    var listid = downid.children;
+    for (var i = 0; i < listid.length; i++) {
+        listid[i].style.left = i * 70 + "px";
+        listid[i].index = i;
+        listid[i].onmouseover = function () {
+            for (var i = 0; i < listid.length; i++) {
+                if (i <= this.index) {
+                    animate(listid[i], "left", i * 70);
+                } else {
+                    animate(listid[i], "left", i * 70 +716);
+                }
+            }
+        }
+    }
+
+    function animate(element, styleName, target) {
+        clearInterval(element.timer);
+        element.timer = setInterval(function () {
+            var current = parseInt(getStyle(element, styleName)) || 0;
+            var step = (target - current) / 10;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            current = current + step;
+            element.style[styleName] = current + "px";
+            if (current == target) {
+                clearInterval(element.timer);
+            }
+        }, 20);
+    }
+    function getStyle(element, styleName) {
+        if (element.currentStyle) {
+            return element.currentStyle[styleName];
+        } else {
+            return getComputedStyle(element, null)[styleName];
+        }
+    }
+</script>
+</body>
+</html>
+</div>
+
+
+
+
+
+

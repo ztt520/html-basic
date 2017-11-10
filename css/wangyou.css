@@ -1,0 +1,343 @@
+body{
+    background-color: #1D1C22;
+    width: 100%;
+}
+.center {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+/*右侧固定*/
+.right-box {
+    position: fixed;
+    top: 40%;
+    right:5px;
+}
+.feige {
+    display: none;
+    position: absolute;
+    visibility: visible;
+    z-index: 9999;
+    left: 50%;
+    top: 100px;
+    margin-left: -350.5px;
+    margin-bottom: 100px;
+    margin-top: 0px;
+    background: url(../images/feige.png) no-repeat;
+    width: 701px;
+    height: 761px;
+    z-index: 9999;
+}
+.feige .feige-close {
+    float: left;
+    padding: 0 20px;
+    color: #7E794D;
+    text-decoration: none;
+    display: inline;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.feige-con {
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 35px;
+}
+.feige-con .ftop {
+    color: #7E794D;
+    margin-top: 100px;
+}
+.feige-con .fbottom {
+    color: #7C8C9A;
+    margin-top: 80px;
+}
+/*---头部 开始---*/
+#top{
+    width: 100%;
+    height: auto;
+    min-width: 1200px;
+    /*background: url("../images/wangyou_top.jpg") no-repeat center top;*/
+}
+.cont1 {
+    height: 635px;
+    background: url("../images/wangyou_top.jpg") no-repeat center top;
+}
+
+.cont1 .nav {
+    width: 1200px;
+    height: 147px;
+    position: relative;
+    padding-top: 115px;
+    /*background: gold;*/
+    right:-44%;
+}
+.nav ul li {
+    width: 16%;
+    height: 147px;
+    float: left;
+    /*background: greenyellow;*/
+}
+.nav ul li a {
+    display: block;
+    width: 135px;
+    height: 145px;
+    /*background: orange;*/
+}
+/*.nav ul li:first-child a{*/
+    /*background: url("../images/wangyou_menu.png") no-repeat 0 -150px;*/
+/*}*/
+.news {
+    position: relative;
+    width: 1200px;
+    height: 330px;
+    margin-top: 50px;
+    /*background: gold;*/
+
+}
+.news .lunbo_left{
+    width: 895px;
+    height: 330px;
+    overflow: hidden;
+}
+.news .wylb{
+    width: 3580px;
+    height: 330px;
+    /*background: yellowgreen;*/
+    position: relative;
+
+}
+.news .wylb #wylb{
+    width:2685px;
+}
+.news .wylb #wylb li{
+    float: left;
+}
+.news #tabs{
+    position: absolute;
+    width: 895px;
+    height: 45px;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.8);
+}
+.news #tabs li{
+    width: 25%;
+    float: left;
+
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
+}
+.news #tabs li:hover{
+    cursor: pointer;
+}
+.licur{
+    background: RGB(44, 111, 150);
+    color: #fff;
+}
+
+.gaoshi_right {
+    width: 285px;
+    height: 100%;
+    background: url("../images/wangyou_notice.png") no-repeat;
+}
+.news .notice .change {
+    width: 90%;
+    height: 65px;
+    line-height: 70px;
+    color: RGB(235, 235, 235);
+    display: block;
+    text-align: right;
+    padding: 0 9px;
+}
+.news .notice .change:hover span{
+    background: RGB(44, 111, 150);
+}
+.gaoshi_right .notice-list {
+    width: 243px;
+    height: 230px;
+    padding: 10px 20px;
+    color: RGB(60, 69, 75);
+    overflow: hidden;
+}
+.gaoshi_right  .notice-list li {
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    padding: 0 6px;
+}
+.gaoshi_right  .notice-list li:hover a {
+    color:#fff;
+}
+.gaoshi_right  .notice-list li:hover span {
+    color:#fff;
+}
+.notice-list a {
+    width: 70%;
+    display: block;
+    color: RGB(147, 168, 181);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.notice-list span {
+    width: 20%;
+    float: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+/*---头部 结束---*/
+
+/*---main 开始---*/
+#main  {
+    margin-top: 20px;
+}
+ #main .cont2 {
+    padding-top: 20px;
+    background: url(../images/wangyou_buttom.jpg) center bottom no-repeat;
+    min-height: 499px;
+}
+ #main .cont2 .center{
+     /*width: 1200px;*/
+     height: 1500px;
+     position: relative;
+     /*margin: 0 auto;*/
+     /*background: green;*/
+ }
+#main .cont2 .center .cxs{
+    height: 544px;
+}
+/*---共用板块---*/
+#main .cont2 .center .biaoti {
+    height: 75px;
+    width: 1200px;
+}
+#main .cont2 .center  .biaoti .biaoti_left{
+    width: 200px;
+    height:70px;
+    background: url("../images/wangyou_title.png") no-repeat 0 0;
+}
+#main .cont2 .center  .biaoti .biaoti_right{
+    margin: 20px 0;
+    color: RGB(140, 151, 155);
+}
+#main .cont2 .center  .biaoti .biaoti_right  a {
+    display: block;
+    width: 95px;
+    height: 33px;
+    background: url("../images/wybt_more.png") no-repeat;
+    /*wybt_more.png*/
+    color: RGB(140, 151, 155);
+    text-align: left;
+}
+#main .cont2 .center  .neirong{
+    height: 446px;
+}
+#main .cont2 .center  .neirong .li-top{
+
+}
+#main .cont2 .center  .neirong li{
+    width: 284px;
+    height: 193px;
+    padding: 0 8px;
+    margin-bottom: 40px;
+    float: left;
+
+}
+#main .cont2 .center  .neirong li:hover{
+    cursor: pointer;
+}
+#main .cont2 .center  .neirong p{
+    width: 275px;
+    margin-top: -4px;
+    background: RGB(15, 15, 17);
+    height: 40px;
+    color: #f1f1f1;
+    line-height: 40px;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#main .cont2 .center .zhy{
+    height: 311px;
+}
+#main .cont2 .center .zhy .biaoti_left{
+    background: url("../images/wangyou_title.png") no-repeat 0px -55px;
+}
+#main .cont2 .center .szq{
+    height: 311px;
+}
+#main .cont2 .center .szq .biaoti_left{
+    background: url("../images/wangyou_title.png") no-repeat 0px -115px;
+}
+#main .cont2 .center .nnj{
+    height: 311px;
+}
+#main .cont2 .center .nnj .biaoti_left{
+    background: url("../images/wangyou_title.png") no-repeat 0px -175px;
+}
+/*---main 结束---*/
+
+/*---底部开始---*/
+#footer {
+    height: 140px;
+
+    font-size: 12px;
+    background-color: #000;
+
+    color: #fff;
+    line-height: 22px;
+    padding: 15px 0;
+
+}
+
+#footer #f-left {
+    width: 285px;
+    height: 120px;
+    position: relative;
+    top:-15px;
+    background: url("../images/logo-2.gif") no-repeat center left;
+    background-size: contain;
+}
+
+#footer #f-left span {
+    position: absolute;
+    bottom: -32px;
+    left: 42px;
+}
+
+#footer #f-mid {
+    width: 100%;
+}
+
+#footer p {
+    padding: 0 0 10px;
+    text-align: center;
+    color: #cbcbcb;
+}
+
+#footer .footer_top a {
+    text-align: center;
+    color: #cbcbcb;
+    padding: 0 2px;
+}
+
+#footer .footer_top span {
+    padding: 0 2px;
+}
+/*---底部结束---*/

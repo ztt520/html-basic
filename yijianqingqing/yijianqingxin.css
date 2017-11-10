@@ -1,0 +1,452 @@
+.text-hide{
+    overflow: hidden;
+    line-height: 500;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.wrap{ overflow: hidden;
+    min-width: 1000px;
+}
+.main{width:978px;margin: 0 auto;}
+.banner{height: 1060px;}
+.banner-bg{
+    position: absolute;
+    left: 50%;
+    top:-10px;
+    margin-left: -960px;
+    width: 1920px;
+    height: 100%;
+
+
+}
+.mid-page {
+    height: 1403px;
+    background: url("images/bg-1.gif") no-repeat center top;
+}
+.page {
+    position: relative;
+    overflow: hidden;
+    height: 1013px;
+    width: 1895px;
+    margin: 0 auto;
+}
+.page-2{
+    width: 1895px;
+    height: 648px;
+    margin: 0 auto;
+
+
+
+
+
+}
+/*¬÷≤•¥Û∫–◊”----------------*/
+.page-2 .lunbo2{
+
+    width: 1130px;
+    height: 587px;
+    position:absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -565px;
+    overflow: hidden;
+
+}
+
+/*∏≤∏«≤„----------------------------*/
+
+.fugai{
+    width: 1130px;
+    height: 587px;
+    position:absolute;
+    /*background: blue ;*/
+    left: 50%;
+    margin-left: -565px;
+    overflow: hidden;
+    /*background: blue;*/
+    z-index: 10;
+display: none;
+    /*background: red;*/
+}
+
+/*---------------------------------------*/
+#baiyechuang{
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+
+}
+#baiyechuang ul{
+    list-style: none;
+}
+
+#baiyechuang ul.tuul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#baiyechuang ul.tuul li.no1{
+    display: block;
+}
+
+#baiyechuang .anniu .left_but{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: url(images/icons.png) no-repeat 0 0;
+    position: absolute;
+    left: 10px;
+    top: 120px;
+    cursor: pointer;
+}
+#baiyechuang .anniu .right_but{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: url(images/icons.png) no-repeat 0 -45px;
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    cursor: pointer;
+}
+#baiyechuang .dianul{
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#baiyechuang .dianul li{
+    float: left;
+    width: 14px;
+    height: 14px;
+    _font-size:0;
+    background: url(images/icons.png) no-repeat -23px -125px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+#baiyechuang .dianul li.cur{
+    background-position: -9px -125px;
+}
+#baiyechuang .maoni{
+    width: 560px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#baiyechuang .maoni div{
+    width: 0px;
+    height: 300px;
+    top: 0;
+    position: absolute;
+    background-image: none;
+}
+#baiyechuang .maoni .no0{
+    right: 490px;
+    background-position: 0 0;
+}
+#baiyechuang .maoni .no1{
+    right: 420px;
+    background-position: -70px 0;
+}
+#baiyechuang .maoni .no2{
+    right: 350px;
+    background-position: -140px 0;
+}
+#baiyechuang .maoni .no3{
+    right: 280px;
+    background-position: -210px 0;
+}
+#baiyechuang .maoni .no4{
+    right: 210px;
+    background-position: -280px 0;
+}
+#baiyechuang .maoni .no5{
+    right: 140px;
+    background-position: -350px 0;
+}
+#baiyechuang .maoni .no6{
+    right: 70px;
+    background-position: -420px 0;
+}
+#baiyechuang .maoni .no7{
+    right: 0px;
+    background-position: -490px 0;
+}
+
+
+
+
+/*¬÷≤•------------------------------*/
+.page-2 .lunbo{
+
+    width: 1130px;
+    height: 587px;
+    position:absolute;
+    /*background: red;*/
+    left: -6px;
+
+
+
+}
+.page-2-1{
+    height: 648px;
+    overflow: hidden;
+}
+
+/*œ¬¿≠   √≈≈…ΩÈ…‹--------------------------------*/
+.page-2 .btn1{
+    display: inline-block;
+    /*position: absolute;*/
+    /*left: 50px;*/
+    /*margin-left: 121px;*/
+
+}
+.page-2 .btn2{
+    display: inline-block;
+    position: absolute;
+    top: 565px;
+    /*left: 50px;*/
+    /*margin-left: 121px;*/
+
+}
+
+.page-2 .FG{
+    width: 1130px;
+    height: 570px;
+    position: absolute;
+    top: -4px;
+    /*background: red;*/
+    /*left: 123px;*/
+    background-image: url("images/juanzhou-center.gif") ;
+    display: none;
+}
+/*.page-2 .CX{*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+    /*top: 22px;*/
+    /*left: 123px;*/
+    /*height: 540px;*/
+    /*display: none;*/
+
+/*}*/
+
+.page2-cont-box{
+    width: 412px;
+    padding-top: 200px;
+    position:absolute;
+    font-size: 14px;
+    line-height: 24px;
+    height: 380px;
+}
+.page2-cont-box.fr img{
+    display: inline-block;
+    position: absolute;
+    left: 606px;
+}
+
+.page2-cont-box img{
+    margin-top:30px;
+}
+
+
+/*----------------------√≈≈…ΩÈ…‹*/
+#but1{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -479px;
+    z-index: 10;
+    width:978px;
+    height: 56px;
+   cursor: pointer;
+    line-height: 56px;
+    font-size: 32px;
+    color: #f0efec;
+    text-align: center;
+    font-weight: normal;
+    font-family: \5B8B\4F53;
+    background: url("images/spr.png") no-repeat 0 0;
+
+
+}
+/*---∆¥Õº”Œœ∑---*/
+.page-4{
+    width: 1895px;
+    height:648px;
+    /*background: url("images/bg-04.jpg") no-repeat center ;*/
+    /*background-size: 100%;*/
+}
+.cont-title {
+    width: 978px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 32px;
+    color: #f0efec;
+    text-align: center;
+    font-weight: normal;
+    font-family: \5B8B\4F53;
+    background: url("images/spr.png") no-repeat 0 0;
+}
+.game-cont{
+    background: url("images/game-cont-bg.png") no-repeat;
+}
+.game-item{
+    background: url("images/game-item-bg.png") no-repeat;
+}
+.wrap a{
+    opacity: .85;filter:alpha(opacity=85);
+}
+.wrap a:hover{
+    opacity: 100;filter:alpha(opacity=100);
+}
+.main{
+    width:978px;
+    margin: 0 auto;
+}
+.page4-tips{
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #829cbe;
+    line-height: 90px;
+}
+.game-wp{
+    margin-top: 35px;
+}
+.game-cont,.game-item{
+    padding: 7px 0 0 9px;
+    width: 406px;
+    height: 408px;
+}
+.game-wp li{
+    position: relative;
+    float: left;
+    width: 132px;
+    height: 132px;
+    background-position: -59px -179px;
+    margin: 0 1px 1px 0;
+}
+.game-wp li span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    text-align: center;
+    line-height: 132px;
+    color: #687488;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.game-wp li img{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+/*-----------------------------Ω· ¯*/
+
+/*--------------µº∫Ω¿∏*/
+.slide-right{
+
+    position: fixed;
+    left: 2%;
+    top: 50%;
+    margin-top: -180px;
+    width: 171px;
+    height: 376px;
+    z-index: 9;
+    background: url("images/slide-bg.png") no-repeat;
+    overflow: hidden;
+}
+.slide-right a{ display: block}
+.btn-ewm{
+    width: 121px;
+    height: 121px;
+    margin: 5px auto;
+    border-radius: 10px;
+    overflow: hidden;
+   
+   
+}
+.btn-down{
+    margin-bottom: 1px;
+    height: 47px;
+}
+.btn-web{
+    width: 128px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    color: #605152;
+    font-size: 18px;
+    font-family: \5B8B\4F53;
+    margin: 14px auto 0;
+    background-position: 0 -90px;
+    background: url("images/spr-2.png")no-repeat -500px -200px;
+}
+.btn-web:hover{
+    background-position:0 -59px;
+}
+.comment_input{
+    outline: none;
+}
+
+
+
+
+/*---------   µ◊≤ø-- -----*/
+#footer {
+    height: 122px;
+
+    font-size: 12px;
+    background-color: #000;
+
+    color: #fff;
+    line-height: 22px;
+    padding: 15px 0;
+
+}
+
+#footer #f-left {
+    width: 300px;
+    height: 120px;
+    position: relative;
+    top:-15px;
+    background: url("../images/logo-2.gif") no-repeat center left;
+    background-size: contain;
+}
+
+#footer #f-left span {
+    position: absolute;
+    bottom: -32px;
+    left: 42px;
+}
+
+#footer #f-mid {
+    width: 100%;
+}
+
+#footer p {
+    padding: 0 0 10px;
+    text-align: center;
+    color: #cbcbcb;
+}
+
+#footer .footer_top a {
+    text-align: center;
+    color: #cbcbcb;
+    padding: 0 2px;
+}
+
+#footer .footer_top span {
+    padding: 0 2px;
+}

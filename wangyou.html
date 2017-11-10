@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>剑侠情缘-忘忧酒馆</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/wangyou.css"/>
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<!--&lt;!&ndash; 广告 开始&ndash;&gt;-->
+<!--<div class="guanggao">-->
+
+<!--</div>-->
+<!-- 广告 结束-->
+<!-- 头部-->
+<div id="top">
+    <!-- 内容1-->
+    <div class="cont1">
+        <div class="center">
+            <!-- 导航栏-->
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="JavaScript:" title="首页"></a>
+                    </li>
+                    <li>
+                        <a class="a2" href="JavaScript:" title="长相思"></a>
+                    </li>
+                    <li>
+                        <a class="a3" href="JavaScript:" title="醉花阴"></a>
+                    </li>
+                    <li>
+                        <a class="a4" href="JavaScript:" title="诉衷情"></a>
+                    </li>
+                    <li>
+                        <a class="a5" href="JavaScript:" title="念奴娇"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 导航栏的移入移出事件-->
+            <script>
+                $(function () {
+                    //使用一个变量进行计数
+                    var $navlis = $(".nav li");//获取所有的li
+                    var $lia = $(".nav li a");//获取所有的div
+                    var arrnavs = ["0px","-160px", "-310px", "-470px", "-630px"];
+                    var arrmouse = ["-10px", "-160px", "-310px", "-470px", "-630px"];
+                    for (var i = 1; i < arrnavs.length; i++) {
+                        $lia.eq(i).css("background", "url(images/wangyou_menu.png) " + arrnavs[i] + " 0");
+                    }
+                    $navlis.mouseenter(function () {
+                        var index = $(this).index();
+                        $lia.each(function (i,e) {
+                            if(i>0){
+                                $(e).css("backgroundPosition",arrnavs[i]+" 0");
+                            }
+
+                        })
+                        $(this).children("a").css("background", "url(images/wangyou_menu.png) " + arrmouse[index] + " -150px");
+                    });
+
+                    $navlis.mouseleave(function () {
+                        $lia.each(function (i,e) {
+                            if(i>0){
+                                $(e).css("backgroundPosition",arrnavs[i]+" 0");
+                            }
+                        })
+                    })
+                    $lia.eq(0).css("background", "url(images/wangyou_menu.png) -10px -150px");
+                    $(".a2").click(function() {
+                        $("html,body").animate({
+                            scrollTop: $(".cxs").offset().top-$(".nav").height()
+                        }, 1000,"linear");
+                    });
+                    $(".a3").click(function() {
+                        $("html,body").animate({
+                            scrollTop: $(".zhy").offset().top-$(".nav").height()
+                        }, 1000,"linear");
+                    });
+                    $(".a4").click(function() {
+                        $("html,body").animate({
+                            scrollTop: $(".szq").offset().top-$(".nav").height()
+                        }, 1000,"linear");
+                    });
+                    $(".a5").click(function() {
+                        $("html,body").animate({
+                            scrollTop: $(".nnj").offset().top-$(".nav").height()
+                        }, 1000,"linear");
+                    });
+
+                });
+            </script>
+            <!-- 消息-->
+            <div class="news clearfix">
+                <div class="lunbo_left fl">
+                    <!-- 轮播图-->
+                    <div class="wylb">
+                        <!-- 轮播图照片位置-->
+                        <ul id="wylb">
+                            <li><a href="#"><img src="images/wylunbo1.jpg" alt=""/></a></li>
+                            <li><a href="#"><img src="images/wylunbo2.jpg" alt=""/></a></li>
+                            <li><a href="#"><img src="images/wylunbo3.jpg" alt=""/></a></li>
+                        </ul>
+                        <!-- 轮播图下面的tab切换-->
+                    </div>
+                    <!-- 存放下面的按钮-->
+                    <div id="tabs">
+                        <ol>
+                            <li class="licur">剑侠情缘全民K歌</li>
+                            <li>侠侣系统</li>
+                            <li>《一起来尬舞》第十二期</li>
+                        </ol>
+                    </div>
+
+                </div>
+                <!-- 轮播图效果-->
+                <script>
+                    $(function () {
+                        //使用一个变量进行计数
+                        var $lis = $("#wylb li");//获取所有的li
+                        var $tablis = $("#tabs li");//获取按钮的li
+                        var nowimg = 0;
+                        $tablis.click(function () {
+                            if (!$lis.is(":animated")) {
+                                //老的信号量元素淡出
+                                $lis.eq(nowimg).fadeOut(600);
+                                //信号量
+                                nowimg = $(this).index();
+                                //新的信号量元素淡出
+                                $lis.eq(nowimg).fadeIn(600);
+                                //小圆点的cur业务：
+                                changeCircle();
+                            }
+                        });
+                        function changeCircle() {
+                            $tablis.eq(nowimg).addClass("licur").siblings().removeClass("licur");
+                        }
+
+                    });
+
+                </script>
+                <!-- 右边的告示-->
+                <div class="gaoshi_right fr">
+                    <div class="notice">
+                        <a href="javascript:void(0);" class="change notice-page"
+                           onclick="PTTSendClick('notice','btn','page');">
+
+                            <span class="next">下一页&nbsp;&gt;</span>
+                        </a>
+                        <ul class="notice-list">
+                            <li><a href="javascript:">少林苦寻有缘人，丐帮竟惨遭抛弃！</a><span>9/19</span>
+                            </li>
+
+                            <li><a href="javascript:">丐帮少林激烈竞争行业一把手！</a><span>9/16</span></li>
+
+                            <li><a href="javascript:">看楚乔小姐姐好漂亮，忍不住就舔屏了！</a><span>9/16</span>
+                            </li>
+
+                            <li><a href="javascript:">剑侠之路有你同行，便胜却人间无数！</a><span>9/16</span>
+                            </li>
+
+                            <li><a href="javascript:">行乞死对头丐帮少林今日为何互相礼让？</a><span>9/13</span>
+                            </li>
+
+                            <li>
+                                <a href="javascript:">含情脉脉看着我的小姐姐，是想对我做什么吗？</a><span>9/13</span>
+                            </li>
+
+                            <li><a href="javascript:">朝朝暮暮，相伴在你的剑侠之路</a><span>9/9</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部 结束-->
+<!--右侧固定栏-->
+<div class="right-box">
+    <ul>
+        <li><a href="index.html" title="进入官网"><img src="images/gw.jpg" width="121" height="95"></a></li>
+        <li><a href="javascript:void(0)" title="飞鸽传书"><img src="images/feige.jpg" width="121" height="95"></a></li>
+    </ul>
+</div>
+<!--飞鸽弹窗-->
+<div class="feige" id="feige">
+    <a class="feige-close" href="javascript:void(0)" title="关闭">×</a>
+
+    <div class="feige-con">
+
+        <div class="ftop">
+            <p>忘忧酒馆乃剑侠情缘同好的聚集地，也被称为同人馆。</p>
+
+            <p>在这里，掌柜窖藏美酒皆缘于江湖。才藻艳逸的撰文、妙笔生花的绘图，妙绝艺术的视频，灵动过人的音律，与普天侠客共享岂不为一件美事？</p>
+
+            <p>酒逢知己千杯少，如果你有自己的原创作品，只要是剑侠主题，都欢迎来稿。</p>
+        </div>
+        <div class="fbottom">
+            <p>1、将你的作品发表至剑侠情缘官方论坛同人影音板块，</p>
+
+            <p>链接：<a href="//jxqy.gamebbs.qq.com/forum.php?mod=forumdisplay&amp;fid=58">//jxqy.gamebbs.qq.com/forum.php?mod=forumdisplay&amp;fid=58</a>
+            </p>
+
+            <p>2、发送你的作品至投稿邮箱：<a>913695@qq.com</a></p>
+
+            <p>3、投稿联系QQ：<a>913695</a></p>
+
+            <h3>注意事项：</h3>
+
+            <p>1、需保证作品是由作者本人原创，请勿抄袭，借鉴请注明灵感来源。</p>
+
+            <p>2、通过邮箱投稿时，请在标题中注明如下信息：【作品分类】作品标题--作者昵称--联系QQ</p>
+
+            <p>如：【小说】剑侠之复仇者联盟--名字--QQ</p>
+
+            <h3>特别备注：</h3>
+
+            <p>优秀作品，将通过官方途径，署名发布在官网、贴吧、部落、游戏圈等场所，同时其他媒体也会进行转发哒！</p>
+        </div>
+    </div>
+</div>
+<div id="_overlay_"
+     style="background-color: rgb(0, 0, 0); border-top: 1px solid rgb(0, 0, 0); position: absolute; height: 2461px; z-index: 9998; width: 100%; left: 0px; top: 0px; opacity: 0.5; display: none;"></div>
+<script>
+    $(function () {
+        var $feige = $(".right-box ul li");
+        $feige.eq(1).click(function () {
+            $(".feige").show();
+            $("#_overlay_").show();
+
+        });
+        $(".feige-close").click(function () {
+            $(this).parents(".feige").hide();
+            $("#_overlay_").hide();
+        });
+    });
+</script>
+<!-- main 开始-->
+<div id="main">
+    <div class="cont2">
+        <div class="center container">
+            <!-- 长相思 start-->
+            <div class="cxs">
+                <!-- 标题-->
+                <div class="biaoti">
+                    <!-- 用来存放标题-->
+                    <div class="biaoti_left fl"></div>
+                    <!-- 用来右边的查看更多-->
+                    <div class="biaoti_right fr"><a href="#"></a></div>
+                </div>
+                <div class="neirong">
+                    <ul class="clearfix">
+                        <!-- 第一个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/cxs-1.jpg" width="284px" height="153px">
+                            </div>
+                            <p>剑侠之路有你同行，便胜却人间无数！</p>
+                        </li>
+                        <!-- 第2个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/cxs-2.jpg" width="284px" height="153px">
+                            </div>
+                            <p>朝朝暮暮，相伴在你的剑侠之路</p>
+                        </li>
+                        <!-- 第3个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/cxs-3.jpg" width="284px" height="153px">
+                            </div>
+                            <p>人总要珍惜每一次缘分的出现</p>
+                        </li>
+                        <!-- 第4个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/cxs-4.jpg" width="284px" height="153px">
+                            </div>
+                            <p>冷月凄清终究不敌你美人如画</p>
+                        </li>
+                        <!-- 第5个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/cxs-5.jpg" width="284px" height="153px">
+                            </div>
+                            <p>虚拟的梦里，我终究还是再一次爱上你了</p>
+                        </li>
+                        <!-- 第6个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/cxs-6.jpg" width="284px" height="153px">
+                            </div>
+                            <p>此生潇潇雨歇就别襄阳无悔</p>
+                        </li>
+                        <!-- 第7个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/cxs-7.jpg" width="284px" height="153px">
+                            </div>
+                            <p>天降福利！评论即送元宝魂石大礼！</p>
+                        </li>
+                        <!-- 第8个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/cxs-8.jpg" width="284px" height="153px">
+                            </div>
+                            <p>剑侠情缘故事有奖征集</p>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    //入口函数：
+                    $(document).ready(function () {
+                        //1 给每个li设置移入效果
+                        //使用css方法进行透明度opacity属性的设置
+                        $(".neirong li").mouseenter(function () {
+                            $(this).css("opacity", 1).siblings().css("opacity", 0.5);
+                        });
+                        //2 给大盒子设置移出效果
+                        $(".neirong").mouseleave(function () {
+                            //设置内部的所有li，透明度为1
+                            $(this).find("li").css("opacity", 1);
+                        });
+
+
+                    });
+                </script>
+
+            </div>
+            <!-- 长相思 end-->
+
+            <!-- 醉花阴 start-->
+            <div class="zhy">
+                <!-- 标题-->
+                <div class="biaoti">
+                    <!-- 用来存放标题-->
+                    <div class="biaoti_left fl"></div>
+                    <!-- 用来右边的查看更多-->
+                    <div class="biaoti_right fr"><a href="#"></a></div>
+                </div>
+                <div class="neirong">
+                    <ul class="clearfix">
+                        <!-- 第一个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/zhy-1.jpg" width="284px" height="153px">
+                            </div>
+                            <p>少林苦寻有缘人，丐帮竟惨遭抛弃！</p>
+                        </li>
+                        <!-- 第2个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/zhy-2.jpg" width="284px" height="153px">
+                            </div>
+                            <p>丐帮少林激烈竞争行业一把手！</p>
+                        </li>
+                        <!-- 第3个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/zhy-3.jpg" width="284px" height="153px">
+                            </div>
+                            <p>看楚乔小姐姐好漂亮，忍不住就舔屏了！</p>
+                        </li>
+                        <!-- 第4个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/zhy-4.jpg" width="284px" height="153px">
+                            </div>
+                            <p>行乞死对头丐帮少林今日为何互相礼让？</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--醉花阴 end-->
+
+            <!-- 诉衷情 开始-->
+            <div class="szq">
+                <!-- 标题-->
+                <div class="biaoti">
+                    <!-- 用来存放标题-->
+                    <div class="biaoti_left fl"></div>
+                    <!-- 用来右边的查看更多-->
+                    <div class="biaoti_right fr"><a href="#"></a></div>
+                </div>
+                <div class="neirong">
+                    <ul class="clearfix">
+                        <!-- 第一个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/szq-1.jpg" width="284px" height="153px">
+                            </div>
+                            <p>剑侠情缘手游藏剑主题曲之《锋出藏剑》</p>
+                        </li>
+                        <!-- 第2个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/szq-2.jpg" width="284px" height="153px">
+                            </div>
+                            <p>剑侠情缘手游长歌主题曲之《扇音长歌》</p>
+                        </li>
+                        <!-- 第3个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/szq-3.jpg" width="284px" height="153px">
+                            </div>
+                            <p>绝世唐门世家，喜欢的话就自己做一个吧！</p>
+                        </li>
+                        <!-- 第4个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/szq-4.jpg" width="284px" height="153px">
+                            </div>
+                            <p>《一起尬舞》十三期：五个小鲜肉排排站献上最骚气的《威风堂堂》</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 诉衷情 结束-->
+            <!-- 念奴娇 开始-->
+            <div class="nnj">
+                <!-- 标题-->
+                <div class="biaoti">
+                    <!-- 用来存放标题-->
+                    <div class="biaoti_left fl"></div>
+                    <!-- 用来右边的查看更多-->
+                    <div class="biaoti_right fr"><a href="#"></a></div>
+                </div>
+                <div class="neirong">
+                    <ul class="clearfix">
+                        <!-- 第一个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/nnj-1.jpg" width="284px" height="153px">
+                            </div>
+                            <p>夜幕下的美艳峨眉，一枕忘忧梦不留</p>
+                        </li>
+                        <!-- 第2个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/nnj-2.jpg" width="284px" height="153px">
+                            </div>
+                            <p>美女玩家COS月眉儿</p>
+                        </li>
+                        <!-- 第3个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/nnj-3.jpg" width="284px" height="153px">
+                            </div>
+                            <p>早知如此绊人心，何如当初莫相识</p>
+                        </li>
+                        <!-- 第4个li-->
+                        <li>
+                            <!-- 存放上面的图片-->
+                            <div class="li-top">
+                                <img src="images/nnj-4.jpg" width="284px" height="153px">
+                            </div>
+                            <p>妹纸美翻了!月媚儿COS</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 念奴娇 结束-->
+        </div>
+    </div>
+</div>
+
+<!-- main 结束-->
+
+<!--页面底部 开始-->
+<div id="footer">
+    <div class="content center">
+        <div id="f-left" class="fl"><span>Inside Out Team</span>
+        </div>
+        <!-- 底部 中-->
+        <div id="f-mid">
+            <p class="footer_top">
+                <a href="#">关于我们</a><span>|</span>
+                <a href="#">服务协议</a><span>|</span>
+                <a href="#">联系我们</a><span>|</span>
+                <a href="#">客服中心</a><span>|</span>
+                <a href="#">诚聘英才</a>
+            </p>
+
+            <p>Copyright © 2017-09 Inside Out 北京市传智播客顺义校区前端黑马34期头脑特工队 版权所有</p>
+
+            <p> 健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+        </div>
+
+    </div>
+</div>
+<!--页面底部 结束-->
+</body>
+</html>

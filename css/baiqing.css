@@ -1,0 +1,250 @@
+/*--- 白青专题 css ----*/
+body {
+    /*background: #000;*/
+    min-width: 1060px;
+}
+#main {
+    width: 1920px;
+    height: 870px;
+}
+/*-----轮播图开始---*/
+#main .all {
+    margin: 0 auto;
+    width: 1770px;
+    height: 870px;
+    position: relative;
+    overflow: hidden;
+}
+
+#main .screen {
+    width: 1770px;
+    height: 870px;
+    position: relative;
+    overflow: hidden;
+}
+
+#main .screen li {
+    width: 1770px;
+    height: 870px;
+    /*overflow: hidden;*/
+
+}
+
+#main .screen ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2610px;
+}
+#main .screen ul li:first-child {
+    background: url("../images/li-1.jpg") no-repeat center top;
+    background-size: 100%;
+}
+
+#main .screen ul .l1 .slide_cont {
+    position: absolute;
+    top: 117px;
+    left: 50%;
+    margin-left: -708px;
+    width: 1100px;
+    height: 855px;
+    z-index: 10;
+    background: url("../images/bq_slide1.png") no-repeat 80px top;
+    background-size: 100%;
+    position: absolute;
+}
+#main .screen ul .l2 {
+    background: url("../images/li-2.jpg") no-repeat center top;
+    background-size: 100%;
+    /*position: absolute;*/
+}
+#main .screen ul .l2 .slide_cont {
+    position: absolute;
+    top:915px;
+    left: 50%;
+    margin-left: -550px;
+    width: 1100px;
+    height: 855px;
+    z-index: 10;
+    background: url("../images/bq_slide2.png") no-repeat 80px top;
+    background-size:90%;
+}
+
+#main .screen ul .l3 {
+    background: url("../images/li-3.jpg") no-repeat 80px top;
+    /*background-size: 100%;*/
+    /*position: absolute;*/
+}
+#main .screen ul .l3 .slide_cont {
+    position: absolute;
+    bottom:-30px;
+    left: 50%;
+    margin-left: -650px;
+    width: 1100px;
+    height: 855px;
+    z-index: 10;
+    background: url("../images/bq_slide3.png") no-repeat 80px top;
+    background-size:93%;
+}
+#main .screen ul .l3 .slide_cont .view_more {
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    font-family: '微软雅黑';
+    background: #8c1931;
+    font-size: 14px;
+    text-align: center;
+    left: 578px;
+    top: 133px;
+    cursor: pointer;
+}
+#main .all ol {
+    /*overflow: hidden;*/
+    height: 150px;
+    position: absolute;
+    top: 20%;
+    /*margin-top: -75px;*/
+    /*line-height: 20px;*/
+    left: 50px;
+
+}
+
+#main .all ol li {
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    background-color: #8896AB;
+    cursor: pointer;
+}
+
+#main .all ol li.current {
+    background: #000;
+}
+/*------轮播图 结束------*/
+/*----侧边栏按钮 开始------*/
+#main .aside {
+    position: relative;
+    /*left: 0px;*/
+    /*top: 0px;*/
+    width: 140px;
+    height: 870px;
+    /*background: #24394A;*/
+    overflow: hidden;
+}
+#main .aside .logo{
+    width: 140px;
+    height: 100px;
+}
+#main .aside .logo a{
+    width: 140px;
+    height: 100px;
+    display: block;
+
+    background: url("../images/bq-logo.gif") no-repeat center top;
+    background-size: 100%;
+}
+
+#main .aside #sideBtn {
+    height: 770px;
+    width: 140px;
+    /*background-color: #495A72;*/
+
+}
+#main .aside #sideBtn ul{
+    width: 140px;
+    height: 770px;
+    background: url("../images/baiqing.png") no-repeat 0px -100px;
+
+}
+#main .aside #sideBtn ul li{
+    width: 140px;
+    height: 60px;
+    overflow: hidden;
+
+}
+#main .aside #sideBtn ul li a{
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+}
+/*a标签变背景色的类名*/
+.liSelected {
+    display: block;
+    width: 140px;
+    height: 100px;
+    outline: none;
+    line-height: 60px;
+    color: #fff;
+    /*font-weight: bold;*/
+    font-size: 14px;
+    text-align: center;
+    background: url("../images/baiqing.png") no-repeat -150px -260px;
+}
+#main .aside #sideBtn .side_gg {
+    width: 92px;
+    height : 160px;
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
+    /*z-index: 10;*/
+}
+#main .aside #sideBtn .side_gg a{
+    width: 92px;
+    height : 160px;
+    display: block;
+    background: url("../images/ad0926.jpg") no-repeat center;
+    /*background-size: 100%;*/
+}
+/*----侧边栏按钮 结束------*/
+/*---底部开始---*/
+#footer {
+    height: 122px;
+
+    font-size: 12px;
+    background-color: #000;
+
+    color: #fff;
+    line-height: 22px;
+    padding: 15px 0;
+
+}
+
+#footer #f-left {
+    width: 300px;
+    height: 120px;
+    position: relative;
+    top:-15px;
+    background: url("../images/logo-2.gif") no-repeat center left;
+    background-size: contain;
+}
+
+#footer #f-left span {
+    position: absolute;
+    bottom: -32px;
+    left: 42px;
+}
+
+#footer #f-mid {
+    width: 100%;
+}
+
+#footer p {
+    padding: 0 0 10px;
+    text-align: center;
+    color: #cbcbcb;
+}
+
+#footer .footer_top a {
+    text-align: center;
+    color: #cbcbcb;
+    padding: 0 2px;
+}
+
+#footer .footer_top span {
+    padding: 0 2px;
+}

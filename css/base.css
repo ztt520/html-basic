@@ -1,0 +1,67 @@
+/* 初始化 */
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    /*height: 5000px;*/
+    /*background-color: #cbe4f3;*/
+    color: #666;
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+i,em {
+    font-style: normal;
+}
+input {
+    border:none;
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+/*a:hover {*/
+    /*color: #c81623;*/
+/*}*/
+img {
+    border:0;
+    vertical-align: center;
+}
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+    display: block;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* 版心 */
+.container {
+    width: 1100px;
+    margin:0 auto;
+}
+/* 浮动 */
+.fl {float: left;}
+.fr{float: right;}
+/* 字体图标 */
+/*/!*@font-face {*!/*/
+    /*/!*font-family: 'icomoon';*!/*/
+    /*/!*src:  url('fonts/icomoon.eot?xse5iu');*!/*/
+    /*/!*src:  url('fonts/icomoon.eot?xse5iu#iefix') format('embedded-opentype'),*!/*/
+    /*/!*url('fonts/icomoon.ttf?xse5iu') format('truetype'),*!/*/
+    /*/!*url('fonts/icomoon.woff?xse5iu') format('woff'),*!/*/
+    /*/!*url('fonts/icomoon.svg?xse5iu#icomoon') format('svg');*!/*/
+    /*/!*font-weight: normal;*!/*/
+    /*/!*font-style: normal;*!/*/
+/*}*/
+/*.font-icon {*/
+    /*font-family: 'icomoon';*/
+/*}*/

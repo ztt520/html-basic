@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>白青主题</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/baiqing.css"/>
+    <link rel="stylesheet" href="css/xuehua.css" />
+    <script type="text/javascript" src="js/xuehua.js" ></script>
+</head>
+<body>
+<div id="main" class="b">
+    <div id="leaf"></div>
+    <!-- 左侧按钮侧边栏-->
+    <div class="aside fl">
+        <h1 class="logo"><a target="_blank" href="index.html"></a></h1>
+        <div id="sideBtn" class="side_btn side_btn_active_0">
+            <ul class="left-aside">
+                <li><a href="index.html"></a></li>
+                <li><a class="liSelected" href="#">踏上新的征途</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <div class="side_gg">
+                <a target="_blank" class="sg_1" href="#"></a>
+            </div>
+        </div>
+
+    </div>
+    <!-- 空着-->
+    <div class="kong">
+
+    </div>
+    <!--轮播图 开始-->
+    <div id="box" class="all fl d">
+        <!-- 存放背景图 可视区域-->
+        <div class="screen">
+            <ul>
+                <li class="l1">
+                    <div class="slide_cont container">
+                        <a target="_blank" class="sclink_1" href="#"></a>
+                        <a class="sclink_2" href="javascript:alert('暂未开启，敬请期待')"></a>
+                        <a target="_blank" class="sclink_3" href="#"></a>
+                        <a target="_blank" href="#"></a>
+                        <a target="_blank" href="#"></a>
+                    </div>
+
+                </li>
+                <li class="l2">
+                    <div id="slide12Cont" class="slide_cont container"></div>
+                    <i class="slide_ice"></i>
+                </li>
+                <li class="l3">
+                    <div class="slide_cont container">
+                        <a target="_blank" class="view_more" href="#">查看攻略</a>
+                    </div>
+                    <i class="slide_ice"></i>
+                </li>
+            </ul>
+            <ol>
+                <!-- 动态创建圆圈-->
+            </ol>
+        </div>
+    </div>
+    <!--轮播图 结束-->
+</div>
+
+<!--页面底部 开始-->
+<div id="footer">
+    <div class="content container">
+        <div id="f-left" class="fl"><span>Inside Out Team</span>
+        </div>
+        <!-- 底部 中-->
+        <div id="f-mid">
+            <p class="footer_top">
+                <a href="#">关于我们</a><span>|</span>
+                <a href="#">服务协议</a><span>|</span>
+                <a href="#">联系我们</a><span>|</span>
+                <a href="#">客服中心</a><span>|</span>
+                <a href="#">诚聘英才</a>
+            </p>
+
+            <p>Copyright © 2017-09 Inside Out 北京市传智播客顺义校区前端黑马34期头脑特工队 版权所有</p>
+
+            <p> 健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+        </div>
+
+    </div>
+</div>
+<div class="htmleaf-container"></div>
+
+<!--页面底部 结束-->
+<!--轮播图-->
+<script src="js/baiqing.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script>
+
+<script>
+    //左侧按钮侧边栏
+    //获取元素
+    var sideBtn = document.getElementById("sideBtn");
+    var sideBtn = document.getElementById("sideBtn");//侧边栏的id
+    var sideUl = sideBtn.children[0];//侧边栏的ul列表
+    var sidelis = sideUl.children;//6个a标签
+    //    var arrSide = ["-100px", "-160px", "-220px", "-280px", "-340px", "-400px"];//存放精灵图y坐标
+    var arrText = ["白青首页", "踏上新的征途", "揭开冰封命运", "回归纯粹快乐", "再掀巅峰对决", "更多精彩内容"];//存放精灵图y坐标
+    //给li设置移入事件
+    for (var i = 0; i < sidelis.length; i++) {
+        sidelis[i].index = i;
+        sidelis[i].style.cursor="pointer";
+        if(sidelis[i].index==0){
+            sidelis[i].onclick= function () {
+//                this.children[0].href="index.html";
+            }
+        }else{
+            sidelis[i].onclick= function () {
+                var sidelisA=this.children[0];
+                for (var i = 0; i <sidelis.length; i++) {
+                    sidelis[i].children[0].className="";
+                    sidelis[i].children[0].innerText="";
+                    sidelis[i].children[0].href="#";
+                }
+                sidelisA.innerText=arrText[this.index];
+                sidelisA.className="liSelected";
+            }
+        }
+
+    }
+
+</script>
+</body>
+</html>

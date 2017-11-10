@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="robots" content="all"/>
+    <meta name="author" content="Tencent-TGideas"/>
+    <meta name="Copyright" content="Tencent"/>
+    <meta name="Keywords" content="剑侠情缘手游,剑侠手游,剑侠情缘移动版,剑侠移动版,剑侠情缘手机版,剑侠手机版,剑侠情缘,剑网手游,剑侠情缘网络版，武侠手游"/>
+    <meta name="Description"
+          content="《剑侠情缘手游》官方网站，《剑侠情缘手游》是剑侠情缘系列首款手游，由原班人马打造，游戏还原了端游中经典的门派以及宋金战场、白虎堂等经典玩法。同时手游版还将开放家族系统、结婚等社交系统，给予玩家一个更丰富，“有人味”的江湖。在还原经典的基础上，手游版将会打造一个更为开放的大世界，让告别房间式RPG体验，让玩家随时随地闯荡江湖。"/>
+    <title>剑侠情缘-主页</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/xuehua.css" />
+    <script type="text/javascript" src="js/huaban.js" ></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+<!--顶部 开始-->
+<div id="top" class="b">
+    <div id="leaf"></div>
+    <!-- 头部导航-->
+    <div id="head" >
+        <nav class="menu container">
+            <ul>
+                <li class="m01 fl"><a href="/index/">Home</a><a href="yindao/yindao.html">首 页</a></li>
+                <li class="m02 fl lis"><a href="/allnews/">News</a><a target="_blank" href="jianghujiao/jianghuxiaoxi.htm">江湖消息</a></li>
+                <li class="m03 fl lis"><a href="/hd/">Strategy</a><a href="new/gonglue.html" target="_blank">攻略百科</a></li>
+                <li class="m04 fl lis"><a target="_blank" href="#">Lotus Pub</a><a href="wangyou.html" target="_blank">忘忧酒馆</a></li>
+                <li class="m05 fl lis"><a href="/download/">Community</a><a target="_blank" href="zhubowan/index.html">同好会</a></li>
+                <li class="m06 fl lis"><a target="_blank" href="#">Love at first sight</a><a target="_blank" href="yijianqingqing/qingqing.html">一见倾心</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 头部 版心 内容-->
+    <div class="container">
+        <!--&lt;!&ndash; 视频按钮&ndash;&gt;-->
+            <!--<div class="main">-->
+                <!--<a href="javascript:;" class="video" id="video"></a>-->
+            <!--</div>-->
+        <!-- 视频按钮-->
+        <a href="javascript:void(0)" class="video"></a>
+        <!--</div>-->
+        <!-- 视频播放标签-->
+        <div class="video-father">
+            <video class="videoPlay" controls="controls" width="600px" height="338px">
+                <source src="images/mp4.mp4">
+            </video>
+            <div class="close">X</div>
+        </div>
+        <script>
+            $(function () {
+                $(".video").click(function () {
+                    $(".video-father").show();
+                    var $obj=$(".videoPlay");
+                    var obj=$obj.get(0);
+                    obj.play();
+                });
+                var $close=$(".video-father").children(".close");
+                $close.mouseenter(function () {
+                    $(this).css({
+                        cursor:"pointer"
+                    });
+                });
+                $close.click(function () {
+                    $(".video-father").hide();
+                    var $obj=$(".videoPlay");
+                    var obj=$obj.get(0);
+                    obj.load();
+                });
+            });
+        </script>
+        <!-- 鼠标移入显示图片-->
+        <a href="#" class="waizhuang"><img src="images/hover.png" ></a>
+    </div>
+</div>
+<!--顶部 结束-->
+
+
+<!--轮播图begin-->
+<div id="mid">
+    <div class="outerBox container" id="outer">
+        <!--外面包裹的大盒子-->
+        <div class="all" id="box">
+            <!--可视区域-->
+            <div class="screen">
+                <ul>
+                    <li><img src="images/si-01.png" alt=""></li>
+                    <li><img src="images/si-02.png" alt=""></li>
+                    <li><img src="images/si-03.png" alt=""></li>
+                    <li><img src="images/si-04.png" alt=""></li>
+                    <li><img src="images/si-05.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <div id="arr">
+            <span id="left"></span>
+            <span id="right"></span>
+        </div>
+    </div>
+</div>
+<!--轮播图end-->
+
+<!--福 开始-->
+<div id="fu">
+    <ul class="container clearfix">
+        <li><a target="_blank" href="meinv/index.htm"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</div>
+<!--福 结束-->
+
+
+<!--手风琴 开始-->
+<div id="sfq">
+
+    <!-- 旋转小飞人-->
+    <div class="fly container">
+        <div class="feiren">
+            <img src="images/hu.png" >
+            <img src="images/jiao.png">
+            <img src="images/gaibang.png">
+            <img src="images/zou.png">
+            <img src="images/chen.png">
+        </div>
+
+    </div>
+    <div class="department_center">
+
+        <div class="department_area">
+            <div class="common_tabs container">
+                <i class="ico_department ico_pos p1">门派中心</i>
+
+                <h3>十四门派聚首江湖&nbsp;群雄争霸快意恩仇</h3>
+                <div id="more">
+                    <a target="_blank" href="huhailong.html">详细信息</a>
+                </div>
+            </div>
+            <div class="common_content o_h container">
+                <ul class="UL o_h">
+                    <li class="on">
+                        <i class="department1 p1"></i>
+
+
+                        <img src="images/1.jpg" alt="武当">
+
+                    </li>
+                    <li>
+                        <i class="department2 p1"></i>
+
+
+                        <img src="images/2.jpg" alt="桃花">
+
+                    </li>
+                    <li>
+                        <i class="department3 p1"></i>
+
+
+                        <img src="images/3.jpg" alt="天王">
+
+                    </li>
+                    <li>
+                        <i class="department4 p1"></i>
+
+                        <div>
+                            <img src="images/4.jpg" alt="逍遥">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department5 p1"></i>
+
+                        <div>
+                            <img src="images/5.jpg" alt="峨眉">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department6 p1"></i>
+
+                        <div>
+                            <img src="images/6.jpg" alt="天忍">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department7 p1"></i>
+
+                        <div>
+                            <img src="images/7.jpg" alt="少林">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department8 p1"></i>
+
+                        <div>
+                            <img src="images/8.jpg" alt="翠烟">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department9 p1"></i>
+
+                        <div>
+                            <img src="images/9.jpg" alt="丐帮">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department10 p1"></i>
+
+                        <div>
+                            <img src="images/10.jpg" alt="五毒">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department11 p1"></i>
+
+                        <div>
+                            <img src="images/11.jpg" alt="唐门">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department12 p1"></i>
+
+                        <div>
+                            <img src="images/12.jpg" alt="昆仑">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department13 p1"></i>
+
+                        <div>
+                            <img src="images/13.jpg" alt="藏剑">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="department14 p1"></i>
+
+                        <div>
+                            <img src="images/14.jpg" alt="长歌">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--手风琴 结束-->
+
+<!--圆 开始-->
+<div id="yuan">
+    <div id="demo">
+        <div id="examples">
+            <div id="content-1" class="content">
+                <ul class="container">
+                    <li><a target="_blank" href="baiqing.html"><img src="images/yuan/jiao (1).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (2).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (3).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (4).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (5).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (6).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (7).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (8).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (9).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (10).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (11).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (12).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (13).jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/yuan/jiao (14).jpg" alt=""/></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--圆 结束-->
+
+<!--页面底部 开始-->
+<div id="footer">
+    <div class="content container">
+        <div id="f-left" class="fl"><span>Inside Out Team</span>
+        </div>
+        <!-- 底部 中-->
+        <div id="f-mid">
+            <p class="footer_top">
+                <a href="#">关于我们</a><span>|</span>
+                <a href="#">服务协议</a><span>|</span>
+                <a href="#">联系我们</a><span>|</span>
+                <a href="#">客服中心</a><span>|</span>
+                <a href="#">诚聘英才</a>
+            </p>
+
+            <p>Copyright © 2017-09 Inside Out 北京市传智播客顺义校区前端黑马34期头脑特工队 版权所有</p>
+
+            <p> 健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+        </div>
+
+    </div>
+</div>
+<!--页面底部 结束-->
+<script  src="js/index.js"></script>
+<script src="js/jquery.mThumbnailScroller.js"></script>
+<!--娇娇 js-->
+<script>
+    (function($){
+        $(window).load(function(){
+            var loopDuration=6000;
+            $("#content-1").mThumbnailScroller({
+                callbacks:{
+                    onInit:function(){
+                        $("#content-1").mThumbnailScroller("scrollTo","right",{duration:loopDuration/2,easing:"easeInOutSmooth"});
+                    },
+                    onTotalScroll:function(){
+                        if($(this).data("mTS").trigger==="external"){
+                            $("#content-1").mThumbnailScroller("scrollTo","left",{duration:loopDuration/2,easing:"easeInOutSmooth"});
+                        }
+                    }
+                }
+            });
+        });
+    })(jQuery);
+</script>
+
+</body>
+</html>

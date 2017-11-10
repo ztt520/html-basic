@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>一见倾心</title>
+    <link rel="stylesheet" href="yijianqingxin.css"/>
+    <link rel="stylesheet" href="base.css"/>
+    <script src="jquery-1.12.4.min.js"></script>
+    <script>
+        //
+        <!--下拉 门派介绍 -->
+        $(function () {
+            $(".btn1").click(function () {
+                $(".FG").slideDown(2000);
+
+            });
+            $(".btn2").click(function () {
+                $(".FG").slideUp(2000);
+            });
+        })
+        //     --------------------覆盖层隐藏
+
+        $(function () {
+            $("#but1").click(function () {
+                $(".fugai").show(1000, function () {
+                    $(".FG").slideDown(3000);
+
+                });
+
+
+            });
+
+//
+            $(".FG").click(function () {
+                $(".FG").slideUp(2000,function(){
+                    $(".fugai").hide(1000)
+                });
+            });
+        })
+
+
+        //        ----------百叶窗轮播-------------------------
+        $(document).ready(
+                function () {
+                    var nowimg = 0;
+                    var mytimer = 0;
+                    dongdong();
+                    //设置定时器
+                    function dongdong() {
+                        window.clearInterval(mytimer);
+                        mytimer = window.setInterval(
+                                function () {
+                                    $(".right_but").trigger("click");
+                                }
+                                , 1500
+                        );
+                    }
+
+                    $("#baiyechuang").mouseenter(
+                            function () {
+                                window.clearInterval(mytimer);
+                            }
+                    );
+
+                    $("#baiyechuang").mouseleave(dongdong);
+
+                    $(".right_but").click(
+                            function () {
+                                // 先折腾信号量
+                                if (nowimg < $(".tuul li").length - 1) {
+                                    nowimg++;
+                                } else {
+                                    nowimg = 0;
+                                }
+                                huanhuan();
+                            }
+                    );
+
+                    $(".dianul li").click(
+                            function () {
+                                nowimg = $(this).index();
+                                huanhuan();
+                            }
+                    );
+
+                    $(".left_but").click(
+                            function () {
+                                if (nowimg > 0) {
+                                    nowimg--;
+                                } else {
+                                    nowimg = $(".tuul li").length - 1;
+                                }
+
+                                huanhuan();
+                            }
+                    );
+
+                    function huanhuan() {
+                        // 换猫腻的图片，换成信号量所表示的li中的那个图片
+                        var temp = $(".tuul li a img").eq(nowimg).attr("src");
+                        $(".maoni div").css("background-image", "url(" + temp + ")");
+
+                        // 让猫腻图进行动画！
+                        $(".maoni div").animate({"width": 70}, 400, function () {
+                            //在动画执行完毕之后，让猫腻的宽度恢复为0
+                            $(".maoni div").css("width", 0);
+                            $(".tuul li").eq(nowimg).show().siblings().hide();
+                        });
+                        $(".dianul li").eq(nowimg).addClass("cur").siblings().removeClass("cur");
+                    }
+
+
+                }
+        );
+
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+<div class="wrap">
+    <div class="page banner">
+        <!--<div class="banner-bg">-->
+            <embed width="1895" height="1080" wmode="transparent"
+                   src="images/banner.swf" allowfullscreen="true"
+                   flashvars="vcastr_file=http://img.smxj.webgame.kanimg.com/acts/hazgyy/img/vdo.flv&amp;IsAutoPlay=1"
+                   type="application/x-shockwave-flash"></embed>
+
+    </div>
+  <div class="mid-page">
+      <div class="page page-2">
+          <div class="main">
+              <div id="but1">门派背景</div>
+              <!--<button id="but2">按钮2</button>-->
+              <!-- ---------------------------------------->
+              <!--------------------------覆盖层---------------------->
+              <div class="fugai">
+                  <!-- -----------下拉-------------------->
+                  <div class="lunbo">
+                      <img class="btn1" src="images/juanzhou-b.gif">
+
+                      <div class="FG">
+                          <!--<img src="images/juanzhou-center.gif" class="CX" height="540px" width="1130px">-->
+                          <div class="main">
+                              <div class="page2-cont">
+                                  <div class="page2-cont-box fl">
+                                      <img src="images/text-changge.png">
+
+                                  </div>
+                                  <div class="page2-cont-box fr">
+
+                                      <img src="images/text-changjian.png">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <img class="btn2" src="images/juanzhou-b.gif">
+                  </div>
+                  <!-- ------- 覆盖层    结束------------------------->
+
+              </div>
+
+              <!-- ----------轮播-----百叶窗-------------------->
+              <div class="lunbo2">
+
+                  <div id="baiyechuang">
+
+                      <ul class="tuul">
+                          <li class="no1"><a href="#"><img
+                                  src="images/2.1503540414.b8f8d76979d5e6cb2bac7d2bb3bfeb0f.jpg"/></a></li>
+                          <li><a href="#"><img src="images/1.1503540400.7585510320f39b0d561d259b7c94ddc1.jpg"/></a></li>
+                          <li><a href="#"><img src="images/1.1504837492.99f208ff3538fbd321077087812fa616.jpg"/></a></li>
+                          <li><a href="#"><img src="images/1.1503402630.188d674c31ec5d503a7e5b1ae3379a62.jpg"/></a></li>
+                          <li><a href="#"><img src="images/2.1504837504.6119797b2bc98c29e954cbe31fe55db9.jpg"/></a></li>
+                      </ul>
+                      <div class="maoni">
+                          <div class="no0"></div>
+                          <div class="no1"></div>
+                          <div class="no2"></div>
+                          <div class="no3"></div>
+                          <div class="no4"></div>
+                          <div class="no5"></div>
+                          <div class="no6"></div>
+                          <div class="no7"></div>
+                      </div>
+
+                      <div class="anniu">
+                          <a class="left_but" id="left_but"></a>
+                          <a class="right_but" id="right_but"></a>
+                      </div>
+                      <ul class="dianul">
+                          <li class="cur"></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                      </ul>
+                  </div>
+
+
+              </div>
+          </div>
+      </div>
+      <div class="page page-4">
+          <div class="main">
+              <h3 class="cont-title cont-title4">拼图小游戏</h3>
+              <p class="page4-tips">（活动说明：拖动图片放到准确的位置，即可完成拼图哦）</p>
+              <div class="game-wp">
+                  <ul class="game-cont puzzle fl">
+                      <li><span>1</span></li>
+                      <li><span>2</span></li>
+                      <li><span>3</span></li>
+                      <li><span>4</span></li>
+                      <li><span>5</span></li>
+                      <li><span>6</span></li>
+                      <li><span>7</span></li>
+                      <li><span>8</span></li>
+                      <li><span>9</span></li>
+                  </ul>
+                  <ul class="game-item puzzle-pieces fr">
+                      <li><span>1</span><img src="images/puzzle-01.jpg" alt="1"></li>
+                      <li><span>2</span><img src="images/puzzle-02.jpg" alt="9"></li>
+                      <li><span>3</span><img src="images/puzzle-03.jpg" alt="4"></li>
+                      <li><span>4</span><img src="images/puzzle-04.jpg" alt="3"></li>
+                      <li><span>5</span><img src="images/puzzle-05.jpg" alt="2"></li>
+                      <li><span>6</span><img src="images/puzzle-06.jpg" alt="7"></li>
+                      <li><span>7</span><img src="images/puzzle-07.jpg" alt="6"></li>
+                      <li><span>8</span><img src="images/puzzle-08.jpg" alt="5"></li>
+                      <li><span>9</span><img src="images/puzzle-09.jpg" alt="8"></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <script src="jquery-1.12.4.min.js"></script>
+      <script src="jquery-ui.min.js"></script>
+      <script>
+          $(function () {
+              //拼图,通过alt属性标识图片顺序
+              var img = null; //获取被拖动的图片元素
+              // 使得图片可被拖动
+              $(".puzzle-pieces li img").draggable({
+                  containment: $('.puzzle-content'),
+                  revert:'invalid'
+              });
+              $(".puzzle-pieces li").each(function (i,e) {
+                  $(e).droppable({
+                      drop:function () {
+                          var index = $(img).attr('alt');
+                          var src = $(img).attr('src');
+                          if ($(img).length != 0) {
+                              if ($(e).children('img').length != 0) {
+                                  $(img).attr('style', 'position:relative');
+                                  return;
+                              }
+                              $(e).append('<img src=' + src + ' alt=' + index + '>');
+                              $(img).remove();
+                              jQuery(".puzzle-pieces li img").draggable({
+                                  containment: $('.puzzle-content'),
+                                  revert:'invalid'
+                              });
+                          }
+                          $(img).attr('style', 'position:relative');
+                      }
+                  });
+              });
+              $('.puzzle li').each(function (i, e) {
+                  $(e).droppable({
+                      // 获取图片被放置的位置
+                      drop: function () {
+                          var index = $(img).attr('alt');
+                          var src = $(img).attr('src');
+                          if ($(img).length != 0) {
+                              if ($(e).children('img').length != 0) {
+                                  $(img).attr('style', 'position:relative');
+                                  return;
+                              }
+                              $(e).append('<img src=' + src + ' alt=' + index + '>');
+                              $(img).remove();
+                              compare();
+                          }
+                          $(img).attr('style', 'position:relative');
+
+                          //
+                      },
+                      // 获取被拖动的图片
+                      activate: function (event, ui) {
+                          img = $(ui)[0].helper[0];
+                      }
+
+                  });
+              });
+
+              function compare(event) {
+                  var time = 0;
+                  if ($(".puzzle li").children('img').length == 9) {
+                      $(".puzzle li").children('img').each(function (i, e) {
+                          console.log($(this).attr('alt'));
+                          if ($(this).attr('alt') - 1 === i) {
+                              time += 1;
+                          }
+                      });
+                      if (time === 9) {
+                          alert('拼图成功!');//拼图成功
+                          $('.puzzle-content .video-bg').show();
+                      } else {
+                          alert('顺序错啦？请点击方框内图片可以撤回哦。')//拼图失败
+                      }
+                  }
+              }
+
+              $('.puzzle').on('click', 'li', function () {
+                  var img = $(this).children('img')[0];
+                  $(this).children('img').remove();
+                  $('.puzzle-pieces li').each(function () {
+                      if ($(this).children('img').length == 0) $(this).append(img);
+                  });
+                  jQuery(".puzzle-pieces li img").draggable({
+                      containment: $('.puzzle-content'),
+                      revert:'invalid'
+                  });
+              });
+
+          })
+      </script>
+  </div>
+  </div>
+
+
+
+</div>
+
+<!-- ------------------导航栏   返回首页-->
+
+<div class="slide-right">
+    <a href="#" class="btn-ewm" title="扫描二维码下载"><img src="images/ewm.jpg" width="121" height="121" alt="扫描二维码下载"></a>
+    <a href="#" class="btn-down" title="iOS下载" onclick="PTTSendClick('btn','down','iOS下载');"></a>
+    <a href="#" class="btn-down" title="安卓下载" onclick="PTTSendClick('btn','down','安卓下载');"></a>
+    <a href="#" class="btn-down" title="电脑版下载" onclick="PTTSendClick('btn','down','电脑版下载');"></a>
+    <a href="#" class="btn-web" title="跳转论坛" onclick="PTTSendClick('btn','link','跳转论坛');">跳转论坛</a>
+    <a href="../index.html" class="btn-web" title="返回官网" onclick="PTTSendClick('btn','link','返回官网');">返回官网</a>
+</div>
+
+<!--------------------   底部-------------->
+<div id="diBu">
+
+    <div id="footer">
+        <div class="content container">
+            <div id="f-left" class="fl"><span>Inside Out Team</span>
+            </div>
+            <!-- 底部 中-->
+            <div id="f-mid">
+                <p class="footer_top">
+                    <a href="#">关于我们</a><span>|</span>
+                    <a href="#">服务协议</a><span>|</span>
+                    <a href="#">联系我们</a><span>|</span>
+                    <a href="#">客服中心</a><span>|</span>
+                    <a href="#">诚聘英才</a>
+                </p>
+
+                <p>Copyright © 2017-09 Inside Out 北京市传智播客顺义校区前端黑马34期头脑特工队 版权所有</p>
+
+                <p> 健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
